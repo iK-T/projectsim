@@ -1,0 +1,1711 @@
+
+bhv_basic_move.cpp,62
+Bhv_BasicMove::execute( PlayerAgent * agent )execute59,1524
+
+bhv_basic_move.h,132
+#define BHV_BASIC_MOVE_HBHV_BASIC_MOVE_H28,846
+class Bhv_BasicMoveBhv_BasicMove33,945
+    Bhv_BasicMove()Bhv_BasicMove36,1009
+
+bhv_basic_offensive_kick.cpp,71
+Bhv_BasicOffensiveKick::execute( PlayerAgent * agent )execute54,1453
+
+bhv_basic_offensive_kick.h,146
+#define TOKYOTEC_BHV_BASIC_OFFENSIVE_KICK_HTOKYOTEC_BHV_BASIC_OFFENSIVE_KICK_H28,865
+class Bhv_BasicOffensiveKickBhv_BasicOffensiveKick33,951
+
+bhv_basic_tackle.cpp,277
+Bhv_BasicTackle::execute( PlayerAgent * agent )execute55,1379
+Bhv_BasicTackle::executeOld( PlayerAgent * agent )executeOld151,4286
+Bhv_BasicTackle::executeV12( PlayerAgent * agent )executeV12194,5477
+Bhv_BasicTackle::executeV14( PlayerAgent * agent,executeV14387,11516
+
+bhv_basic_tackle.h,277
+#define BHV_BASIC_TACKLE_HBHV_BASIC_TACKLE_H28,848
+class Bhv_BasicTackleBhv_BasicTackle32,916
+    const double M_min_probability;M_min_probability35,983
+    const double M_body_thr;M_body_thr36,1019
+    Bhv_BasicTackle( const double & min_prob,Bhv_BasicTackle38,1056
+
+bhv_custom_before_kick_off.cpp,72
+Bhv_CustomBeforeKickOff::execute( PlayerAgent * agent )execute49,1281
+
+bhv_custom_before_kick_off.h,281
+#define BHV_CUSTOM_BEFORE_KICK_OFF_HBHV_CUSTOM_BEFORE_KICK_OFF_H28,899
+class Bhv_CustomBeforeKickOffBhv_CustomBeforeKickOff37,1094
+    rcsc::Vector2D M_move_point;M_move_point41,1210
+    Bhv_CustomBeforeKickOff( const rcsc::Vector2D & point )Bhv_CustomBeforeKickOff48,1376
+
+bhv_go_to_static_ball.cpp,67
+Bhv_GoToStaticBall::execute( PlayerAgent * agent )execute52,1325
+
+bhv_go_to_static_ball.h,341
+#define AGENT2D_BHV_GO_TO_STATIC_BALL_HAGENT2D_BHV_GO_TO_STATIC_BALL_H28,861
+class Bhv_GoToStaticBallBhv_GoToStaticBall33,975
+    const rcsc::AngleDeg M_ball_place_angle; // global angle from self final kick positionM_ball_place_angle36,1045
+    Bhv_GoToStaticBall( const rcsc::AngleDeg & ball_place_angle )Bhv_GoToStaticBall39,1145
+
+bhv_goalie_basic_move.cpp,860
+Bhv_GoalieBasicMove::execute( PlayerAgent * agent )execute57,1504
+Bhv_GoalieBasicMove::getTargetPoint( PlayerAgent * agent )getTargetPoint141,4075
+Bhv_GoalieBasicMove::getBasicDashPower( PlayerAgent * agent,getBasicDashPower263,8286
+Bhv_GoalieBasicMove::doPrepareDeepCross( PlayerAgent * agent,doPrepareDeepCross336,10395
+Bhv_GoalieBasicMove::doStopAtMovePoint( PlayerAgent * agent,doStopAtMovePoint405,12798
+Bhv_GoalieBasicMove::doMoveForDangerousState( PlayerAgent * agent,doMoveForDangerousState452,14378
+Bhv_GoalieBasicMove::doCorrectX( PlayerAgent * agent,doCorrectX517,16495
+Bhv_GoalieBasicMove::doCorrectBodyDir( PlayerAgent * agent,doCorrectBodyDir579,18503
+Bhv_GoalieBasicMove::doGoToMovePoint( PlayerAgent * agent,doGoToMovePoint651,20772
+Bhv_GoalieBasicMove::doGoToPointLookBall( PlayerAgent * agent,doGoToPointLookBall736,23373
+
+bhv_goalie_basic_move.h,217
+#define AGENT2D_BHV_GOALIE_BASIC_MOVE_HAGENT2D_BHV_GOALIE_BASIC_MOVE_H28,861
+namespace rcsc {rcsc35,1008
+class Bhv_GoalieBasicMoveBhv_GoalieBasicMove39,1045
+    Bhv_GoalieBasicMove()Bhv_GoalieBasicMove43,1116
+
+bhv_goalie_chase_ball.cpp,365
+Bhv_GoalieChaseBall::execute( PlayerAgent * agent )execute56,1478
+Bhv_GoalieChaseBall::doGoToCatchPoint( PlayerAgent * agent,doGoToCatchPoint216,7259
+Bhv_GoalieChaseBall::is_ball_chase_situation( const PlayerAgent  * agent )is_ball_chase_situation302,10168
+Bhv_GoalieChaseBall::is_ball_shoot_moving( const PlayerAgent * agent )is_ball_shoot_moving419,13869
+
+bhv_goalie_chase_ball.h,132
+#define AGENT2D_BHV_GOALIE_CHASE_BALL_HAGENT2D_BHV_GOALIE_CHASE_BALL_H28,861
+class Bhv_GoalieChaseBallBhv_GoalieChaseBall33,975
+
+bhv_goalie_free_kick.cpp,307
+Bhv_GoalieFreeKick::execute( rcsc::PlayerAgent * agent )execute54,1423
+Bhv_GoalieFreeKick::getKickPoint( const rcsc::PlayerAgent * agent )getKickPoint159,4480
+Bhv_GoalieFreeKick::doKick( rcsc::PlayerAgent * agent )doKick206,5974
+Bhv_GoalieFreeKick::doWait( rcsc::PlayerAgent * agent )doWait240,7207
+
+bhv_goalie_free_kick.h,180
+#define AGENT2D_BHV_GOALIE_FREE_KICK_HAGENT2D_BHV_GOALIE_FREE_KICK_H28,860
+class Bhv_GoalieFreeKickBhv_GoalieFreeKick33,973
+    Bhv_GoalieFreeKick()Bhv_GoalieFreeKick38,1052
+
+bhv_penalty_kick.cpp,1143
+Bhv_PenaltyKick::execute( PlayerAgent * agent )execute70,1916
+Bhv_PenaltyKick::doKickerWait( PlayerAgent * agent )doKickerWait165,4231
+Bhv_PenaltyKick::doKickerSetup( PlayerAgent * agent )doKickerSetup251,6635
+Bhv_PenaltyKick::doKickerReady( PlayerAgent * agent )doKickerReady279,7356
+Bhv_PenaltyKick::doKicker( PlayerAgent * agent )doKicker304,7971
+Bhv_PenaltyKick::doOneKickShoot( PlayerAgent* agent )doOneKickShoot366,9310
+Bhv_PenaltyKick::doShoot( PlayerAgent * agent )doShoot441,11442
+Bhv_PenaltyKick::getShootTarget( const PlayerAgent * agent,getShootTarget482,12733
+Bhv_PenaltyKick::doDribble( PlayerAgent * agent )doDribble622,17282
+Bhv_PenaltyKick::doGoalieWait( PlayerAgent* agent )doGoalieWait842,25131
+Bhv_PenaltyKick::doGoalieSetup( PlayerAgent * agent )doGoalieSetup893,26506
+Bhv_PenaltyKick::doGoalie( PlayerAgent* agent )doGoalie924,27316
+Bhv_PenaltyKick::doGoalieBasicMove( PlayerAgent * agent )doGoalieBasicMove976,28853
+Bhv_PenaltyKick::getGoalieMovePos( const Vector2D & ball_pos,getGoalieMovePos1065,31916
+Bhv_PenaltyKick::doGoalieSlideChase( PlayerAgent* agent )doGoalieSlideChase1184,36057
+
+bhv_penalty_kick.h,118
+#define TOKYOTECH_BHV_PENALTY_KICK_HTOKYOTECH_BHV_PENALTY_KICK_H28,858
+class Bhv_PenaltyKickBhv_PenaltyKick33,969
+
+bhv_prepare_set_play_kick.cpp,71
+Bhv_PrepareSetPlayKick::execute( PlayerAgent * agent )execute52,1314
+
+bhv_prepare_set_play_kick.h,413
+#define AGENT2D_BHV_PREPARE_SET_PLAY_KICK_HAGENT2D_BHV_PREPARE_SET_PLAY_KICK_H28,865
+class Bhv_PrepareSetPlayKickBhv_PrepareSetPlayKick33,983
+    const rcsc::AngleDeg M_ball_place_angle; // global angle from self final kick positionM_ball_place_angle36,1057
+    const int M_wait_cycle;M_wait_cycle37,1148
+    Bhv_PrepareSetPlayKick( const rcsc::AngleDeg & ball_place_angle,Bhv_PrepareSetPlayKick40,1185
+
+bhv_set_play.cpp,576
+Bhv_SetPlay::execute( PlayerAgent * agent )execute74,1931
+Bhv_SetPlay::get_set_play_dash_power( const PlayerAgent * agent )get_set_play_dash_power195,5192
+can_go_to( const int count,can_go_to262,7228
+Bhv_SetPlay::get_avoid_circle_point( const WorldModel & wm,get_avoid_circle_point314,8734
+Bhv_SetPlay::is_kicker( const PlayerAgent * agent )is_kicker423,12221
+Bhv_SetPlay::is_delaying_tactics_situation( const PlayerAgent * agent )is_delaying_tactics_situation554,16491
+Bhv_SetPlay::doBasicTheirSetPlayMove( PlayerAgent * agent )doBasicTheirSetPlayMove611,17957
+
+bhv_set_play.h,149
+#define BHV_SET_PLAY_HBHV_SET_PLAY_H28,844
+namespace rcsc {rcsc33,941
+class Bhv_SetPlayBhv_SetPlay37,979
+    Bhv_SetPlay()Bhv_SetPlay40,1041
+
+bhv_set_play_free_kick.cpp,277
+Bhv_SetPlayFreeKick::execute( PlayerAgent * agent )execute66,1782
+Bhv_SetPlayFreeKick::doKick( PlayerAgent * agent )doKick88,2212
+Bhv_SetPlayFreeKick::doKickWait( PlayerAgent * agent )doKickWait228,7211
+Bhv_SetPlayFreeKick::doMove( PlayerAgent * agent )doMove327,10221
+
+bhv_set_play_free_kick.h,172
+#define BHV_SET_PLAY_FREE_KICK_HBHV_SET_PLAY_FREE_KICK_H28,854
+class Bhv_SetPlayFreeKickBhv_SetPlayFreeKick35,979
+    Bhv_SetPlayFreeKick()Bhv_SetPlayFreeKick39,1050
+
+bhv_set_play_goal_kick.cpp,587
+Bhv_SetPlayGoalKick::execute( PlayerAgent * agent )execute71,1866
+Bhv_SetPlayGoalKick::doKick( PlayerAgent * agent )doKick93,2239
+Bhv_SetPlayGoalKick::doSecondKick( PlayerAgent * agent )doSecondKick152,3547
+Bhv_SetPlayGoalKick::doKickWait( PlayerAgent * agent )doKickWait214,5317
+Bhv_SetPlayGoalKick::doPass( PlayerAgent * agent )doPass297,7927
+Bhv_SetPlayGoalKick::doIntercept( PlayerAgent * agent )doIntercept361,10143
+Bhv_SetPlayGoalKick::doMove( PlayerAgent * agent )doMove407,11498
+Bhv_SetPlayGoalKick::doKickToFarSide( PlayerAgent * agent )doKickToFarSide490,14131
+
+bhv_set_play_goal_kick.h,173
+#define BHV_SET_PLAY_GOAL_KICK_HBHV_SET_PLAY_GOAL_KICK_H28,854
+class Bhv_SetPlayGoalKickBhv_SetPlayGoalKick36,1007
+    Bhv_SetPlayGoalKick()Bhv_SetPlayGoalKick40,1078
+
+bhv_set_play_indirect_free_kick.cpp,592
+Bhv_SetPlayIndirectFreeKick::execute( PlayerAgent * agent )execute66,1788
+Bhv_SetPlayIndirectFreeKick::doKicker( PlayerAgent * agent )doKicker110,3087
+Bhv_SetPlayIndirectFreeKick::doKickWait( PlayerAgent * agent )doKickWait284,8787
+Bhv_SetPlayIndirectFreeKick::doKickToShooter( PlayerAgent * agent )doKickToShooter343,10490
+get_avoid_circle_point( const WorldModel & wm,get_avoid_circle_point422,13198
+Bhv_SetPlayIndirectFreeKick::doOffenseMove( PlayerAgent * agent )doOffenseMove512,16361
+Bhv_SetPlayIndirectFreeKick::doDefenseMove( PlayerAgent * agent )doDefenseMove572,18455
+
+bhv_set_play_indirect_free_kick.h,222
+#define BHV_SET_PLAY_INDIRECT_FREE_KICK_HBHV_SET_PLAY_INDIRECT_FREE_KICK_H28,863
+class Bhv_SetPlayIndirectFreeKickBhv_SetPlayIndirectFreeKick33,979
+    Bhv_SetPlayIndirectFreeKick()Bhv_SetPlayIndirectFreeKick37,1058
+
+bhv_set_play_kick_in.cpp,269
+Bhv_SetPlayKickIn::execute( PlayerAgent * agent )execute69,1804
+Bhv_SetPlayKickIn::doKick( PlayerAgent * agent )doKick91,2173
+Bhv_SetPlayKickIn::doKickWait( PlayerAgent * agent )doKickWait272,8284
+Bhv_SetPlayKickIn::doMove( PlayerAgent * agent )doMove350,10752
+
+bhv_set_play_kick_in.h,160
+#define BHV_SET_PLAY_KICK_IN_HBHV_SET_PLAY_KICK_IN_H28,852
+class Bhv_SetPlayKickInBhv_SetPlayKickIn33,957
+    Bhv_SetPlayKickIn()Bhv_SetPlayKickIn37,1026
+
+bhv_set_play_kick_off.cpp,272
+Bhv_SetPlayKickOff::execute( PlayerAgent * agent )execute58,1486
+Bhv_SetPlayKickOff::doKick( PlayerAgent * agent )doKick82,1938
+Bhv_SetPlayKickOff::doKickWait( PlayerAgent * agent )doKickWait184,5277
+Bhv_SetPlayKickOff::doMove( PlayerAgent * agent )doMove264,7759
+
+bhv_set_play_kick_off.h,167
+#define BHV_SET_PLAY_KICK_OFF_HBHV_SET_PLAY_KICK_OFF_H28,853
+class Bhv_SetPlayKickOffBhv_SetPlayKickOff36,1004
+    Bhv_SetPlayKickOff()Bhv_SetPlayKickOff40,1074
+
+bhv_their_goal_kick_move.cpp,222
+Bhv_TheirGoalKickMove::execute( PlayerAgent * agent )execute60,1533
+Bhv_TheirGoalKickMove::doNormal( PlayerAgent * agent )doNormal153,4490
+Bhv_TheirGoalKickMove::doChaseBall( PlayerAgent * agent )doChaseBall200,5973
+
+bhv_their_goal_kick_move.h,184
+#define BHV_THEIR_GOAL_KICK_MOVE_HBHV_THEIR_GOAL_KICK_MOVE_H28,856
+class Bhv_TheirGoalKickMoveBhv_TheirGoalKickMove33,965
+    Bhv_TheirGoalKickMove()Bhv_TheirGoalKickMove37,1038
+
+chain_action/actgen_action_chain_length_filter.h,1508
+#define ACTGEN_ACTION_CHAIN_LENGTH_FILTER_HACTGEN_ACTION_CHAIN_LENGTH_FILTER_H28,881
+class ActGen_MaxActionChainLengthFilterActGen_MaxActionChainLengthFilter36,1009
+    const ActionGenerator::ConstPtr M_generator;M_generator39,1089
+    const unsigned int M_max_threshold_length;M_max_threshold_length40,1138
+    ActGen_MaxActionChainLengthFilter( const ActionGenerator * generator,ActGen_MaxActionChainLengthFilter43,1194
+    void generate( std::vector< ActionStatePair > * result,generate49,1446
+class ActGen_MinActionChainLengthFilterActGen_MinActionChainLengthFilter61,1850
+    const ActionGenerator::ConstPtr M_generator;M_generator64,1930
+    const unsigned int M_min_threshold_length;M_min_threshold_length65,1979
+    ActGen_MinActionChainLengthFilter( const ActionGenerator * generator,ActGen_MinActionChainLengthFilter68,2035
+    void generate( std::vector< ActionStatePair > * result,generate74,2287
+class ActGen_RangeActionChainLengthFilterActGen_RangeActionChainLengthFilter87,2697
+    static const int MIN = 1;MIN90,2778
+    static const int MAX = -1;MAX91,2808
+    const ActionGenerator::ConstPtr M_generator;M_generator94,2849
+    const int M_min_threshold_length;M_min_threshold_length96,2899
+    const int M_max_threshold_length;M_max_threshold_length97,2937
+    ActGen_RangeActionChainLengthFilter( const ActionGenerator * generator,ActGen_RangeActionChainLengthFilter100,2984
+    void generate( std::vector< ActionStatePair > * result,generate108,3373
+
+chain_action/actgen_cross.cpp,82
+ActGen_Cross::generate( std::vector< ActionStatePair > * result,generate49,1151
+
+chain_action/actgen_cross.h,84
+#define ACTGEN_CROSS_HACTGEN_CROSS_H28,844
+class ActGen_CrossActGen_Cross32,899
+
+chain_action/actgen_direct_pass.cpp,413
+static const double SAME_PASSER_POS_THRESHOLD2 = std::pow( 10.0, 2 );SAME_PASSER_POS_THRESHOLD253,1243
+s_get_ball_speed_for_pass( const double & distance )s_get_ball_speed_for_pass62,1415
+ActGen_DirectPass::ActGen_DirectPass()ActGen_DirectPass91,1831
+ActGen_DirectPass::~ActGen_DirectPass()~ActGen_DirectPass100,1957
+ActGen_DirectPass::generate( std::vector< ActionStatePair > * result,generate110,2089
+
+chain_action/actgen_direct_pass.h,106
+#define ACTGEN_DIRECT_PASS_HACTGEN_DIRECT_PASS_H28,848
+class ActGen_DirectPassActGen_DirectPass34,928
+
+chain_action/actgen_self_pass.cpp,85
+ActGen_SelfPass::generate( std::vector< ActionStatePair > * result,generate46,1102
+
+chain_action/actgen_self_pass.h,98
+#define ACTGEN_SELF_PASS_HACTGEN_SELF_PASS_H28,848
+class ActGen_SelfPassActGen_SelfPass32,907
+
+chain_action/actgen_shoot.cpp,159
+static const int VALID_PLAYER_THRESHOLD = 10;VALID_PLAYER_THRESHOLD44,1048
+ActGen_Shoot::generate( std::vector< ActionStatePair > * result,generate51,1181
+
+chain_action/actgen_shoot.h,84
+#define ACTGEN_SHOOT_HACTGEN_SHOOT_H28,842
+class ActGen_ShootActGen_Shoot32,897
+
+chain_action/actgen_short_dribble.cpp,89
+ActGen_ShortDribble::generate( std::vector< ActionStatePair > * result,generate47,1180
+
+chain_action/actgen_short_dribble.h,114
+#define ACTGEN_SHORT_DRIBBLE_HACTGEN_SHORT_DRIBBLE_H28,852
+class ActGen_ShortDribbleActGen_ShortDribble32,915
+
+chain_action/actgen_simple_dribble.cpp,90
+ActGen_SimpleDribble::generate( std::vector< ActionStatePair > * result,generate54,1261
+
+chain_action/actgen_simple_dribble.h,147
+#define ACTGEN_SIMPLE_DRIBBLE_HACTGEN_SIMPLE_DRIBBLE_H28,853
+namespace rcsc {rcsc32,917
+class ActGen_SimpleDribbleActGen_SimpleDribble37,981
+
+chain_action/actgen_strict_check_pass.cpp,92
+ActGen_StrictCheckPass::generate( std::vector< ActionStatePair > * result,generate49,1191
+
+chain_action/actgen_strict_check_pass.h,128
+#define ACTGEN_STRICT_CHECK_PASS_HACTGEN_STRICT_CHECK_PASS_H28,856
+class ActGen_StrictCheckPassActGen_StrictCheckPass32,923
+
+chain_action/action_chain_graph.cpp,1592
+#define DEBUG_PROFILEDEBUG_PROFILE46,1119
+const size_t ActionChainGraph::DEFAULT_MAX_CHAIN_LENGTH = 4;DEFAULT_MAX_CHAIN_LENGTH59,1366
+const size_t ActionChainGraph::DEFAULT_MAX_EVALUATE_LIMIT = 500;DEFAULT_MAX_EVALUATE_LIMIT60,1427
+std::vector< std::pair< Vector2D, double > > ActionChainGraph::S_evaluated_points;S_evaluated_points62,1493
+const double HEAT_COLOR_SCALE = 128.0;HEAT_COLOR_SCALE67,1591
+const double HEAT_COLOR_PERIOD = 2.0 * M_PI;HEAT_COLOR_PERIOD68,1630
+heat_color( const double & x )heat_color72,1687
+debug_paint_evaluate_color( const Vector2D & pos,debug_paint_evaluate_color80,1897
+ActionChainGraph::ActionChainGraph( const FieldEvaluator::ConstPtr & evaluator,ActionChainGraph116,3071
+ActionChainGraph::calculateResult( const WorldModel & wm )calculateResult140,3901
+ActionChainGraph::calculateResultChain( const WorldModel & wm,calculateResultChain230,6763
+ActionChainGraph::doSearch( const WorldModel & wm,doSearch254,7394
+class ChainComparatorChainComparator378,10745
+    bool operator()( const std::pair< std::vector< ActionStatePair >,operator ()381,10777
+ActionChainGraph::calculateResultBestFirstSearch( const WorldModel & wm,calculateResultBestFirstSearch395,11136
+ActionChainGraph::debugPrintCurrentState( const WorldModel & wm )debugPrintCurrentState541,15449
+ActionChainGraph::debug_send_chain( PlayerAgent * agent,debug_send_chain600,16954
+ActionChainGraph::write_chain_log( const WorldModel & world,write_chain_log720,20225
+ActionChainGraph::write_chain_log( const std::string & pre_log_message,write_chain_log733,20619
+
+chain_action/action_chain_graph.h,1484
+#define RCSC_ACTION_CHAIN_GRAPH_HRCSC_ACTION_CHAIN_GRAPH_H33,954
+namespace rcsc {rcsc46,1174
+class ActionChainGraph {ActionChainGraph54,1277
+    typedef boost::shared_ptr< ActionChainGraph > Ptr; //!< pointer type aliasPtr57,1311
+    typedef boost::shared_ptr< const ActionChainGraph > ConstPtr; //!< const pointer type aliasConstPtr58,1390
+    static const size_t DEFAULT_MAX_CHAIN_LENGTH;DEFAULT_MAX_CHAIN_LENGTH61,1495
+    static const size_t DEFAULT_MAX_EVALUATE_LIMIT;DEFAULT_MAX_EVALUATE_LIMIT62,1545
+    FieldEvaluator::ConstPtr M_evaluator;M_evaluator65,1607
+    ActionGenerator::ConstPtr M_action_generator;M_action_generator66,1649
+    int M_chain_count;M_chain_count68,1700
+    int M_best_chain_count;M_best_chain_count69,1723
+    unsigned long M_max_chain_length;M_max_chain_length71,1752
+    long M_max_evaluate_limit;M_max_evaluate_limit72,1790
+    static std::vector< std::pair< rcsc::Vector2D, double > > S_evaluated_points;S_evaluated_points74,1822
+    std::vector< ActionStatePair > M_result;M_result77,1914
+    double M_best_evaluation;M_best_evaluation78,1959
+    void calculate( const rcsc::WorldModel & wm )calculate111,3273
+    const std::vector< ActionStatePair > & getAllChain() constgetAllChain116,3373
+    const CooperativeAction & getFirstAction() constgetFirstAction121,3481
+    const PredictState & getFirstState() constgetFirstState126,3601
+    const PredictState & getFinalResult() constgetFinalResult131,3714
+
+chain_action/action_chain_holder.cpp,615
+ActionChainHolder::ActionChainHolder()ActionChainHolder45,1136
+ActionChainHolder::instance()instance58,1340
+ActionChainHolder::i()i70,1546
+ActionChainHolder::setFieldEvaluator( const FieldEvaluator::ConstPtr & evaluator )setFieldEvaluator80,1683
+ActionChainHolder::setActionGenerator( const ActionGenerator::ConstPtr & generator )setActionGenerator90,1886
+ActionChainHolder::fieldEvaluator() constfieldEvaluator100,2111
+ActionChainHolder::actionGenerator() constactionGenerator110,2289
+ActionChainHolder::update( const WorldModel & wm )update120,2447
+ActionChainHolder::graph() constgraph145,3151
+
+chain_action/action_chain_holder.h,316
+#define ACTION_CHAIN_HOLDER_HACTION_CHAIN_HOLDER_H33,942
+namespace rcsc {rcsc35,973
+class ActionChainHolder {ActionChainHolder43,1103
+    ActionChainGraph::Ptr M_graph;M_graph46,1139
+    FieldEvaluator::ConstPtr M_evaluator;M_evaluator47,1174
+    ActionGenerator::ConstPtr M_generator;M_generator48,1216
+
+chain_action/action_generator.h,651
+#define ACTION_GENERATOR_HACTION_GENERATOR_H33,930
+namespace rcsc {rcsc41,1053
+class ActionGenerator {ActionGenerator49,1189
+    typedef boost::shared_ptr< ActionGenerator > Ptr;Ptr52,1222
+    typedef boost::shared_ptr< const ActionGenerator > ConstPtr;ConstPtr53,1276
+    ActionGenerator()ActionGenerator63,1486
+    ~ActionGenerator()~ActionGenerator67,1531
+class CompositeActionGeneratorCompositeActionGenerator91,2275
+    std::vector< ConstPtr > M_generators;M_generators95,2374
+    void addGenerator( const ActionGenerator * g )addGenerator100,2427
+    void generate( std::vector< ActionStatePair > * result,generate109,2594
+
+chain_action/action_state_pair.h,1095
+#define RCSC_PLAYER_ACTION_STATE_PAIR_HRCSC_PLAYER_ACTION_STATE_PAIR_H28,859
+class ActionStatePair {ActionStatePair42,1125
+    boost::shared_ptr< const CooperativeAction > M_action;M_action44,1157
+    boost::shared_ptr< const PredictState > M_state;M_state45,1216
+    ActionStatePair( const ActionStatePair & rhs )ActionStatePair56,1396
+    ActionStatePair & operator=( const ActionStatePair & rhs )operator =66,1656
+    ActionStatePair( const CooperativeAction * action,ActionStatePair76,1902
+    ActionStatePair( const boost::shared_ptr< const CooperativeAction > & action,ActionStatePair82,2075
+    ActionStatePair( const CooperativeAction * action,ActionStatePair88,2275
+    ActionStatePair( const boost::shared_ptr< const CooperativeAction > & action,ActionStatePair94,2475
+    const CooperativeAction & action() constaction100,2702
+    const PredictState & state() conststate105,2792
+    const boost::shared_ptr< const CooperativeAction > & actionPtr() constactionPtr110,2875
+    const boost::shared_ptr< const PredictState > & statePtr() conststatePtr115,2994
+
+chain_action/bhv_chain_action.cpp,729
+class IntentionTurnToIntentionTurnTo64,1792
+    int M_step;M_step67,1854
+    Vector2D M_target_point;M_target_point68,1870
+    IntentionTurnTo( const Vector2D & target_point )IntentionTurnTo72,1909
+IntentionTurnTo::finished( const PlayerAgent * agent )finished90,2228
+IntentionTurnTo::execute( PlayerAgent * agent )execute164,4059
+Bhv_ChainAction::Bhv_ChainAction( const ActionChainGraph & chain_graph )Bhv_ChainAction183,4540
+Bhv_ChainAction::Bhv_ChainAction()Bhv_ChainAction193,4735
+Bhv_ChainAction::execute( PlayerAgent * agent )execute204,4916
+Bhv_ChainAction::doTurnToForward( PlayerAgent * agent )doTurnToForward355,9590
+Bhv_ChainAction::getKeepBallVel( const WorldModel & wm )getKeepBallVel485,13598
+
+chain_action/bhv_chain_action.h,194
+#define BHV_CHAIN_ACTION_HBHV_CHAIN_ACTION_H28,846
+namespace rcsc {rcsc35,966
+class Bhv_ChainActionBhv_ChainAction42,1052
+    const ActionChainGraph & M_chain_graph;M_chain_graph46,1120
+
+chain_action/bhv_normal_dribble.cpp,1145
+class IntentionNormalDribbleIntentionNormalDribble64,1734
+    const Vector2D M_target_point; //!< trapped ball positionM_target_point67,1803
+    int M_turn_step; //!< remained turn stepM_turn_step69,1866
+    int M_dash_step; //!< remained dash stepM_dash_step70,1911
+    GameTime M_last_execute_time; //!< last executed timeM_last_execute_time72,1957
+    NeckAction::Ptr M_neck_action;M_neck_action74,2016
+    ViewAction::Ptr M_view_action;M_view_action75,2051
+    IntentionNormalDribble( const Vector2D & target_point,IntentionNormalDribble79,2096
+    void clear()clear101,2827
+IntentionNormalDribble::finished( const PlayerAgent * agent )finished116,3120
+IntentionNormalDribble::execute( PlayerAgent * agent )execute181,5051
+IntentionNormalDribble::checkOpponent( const WorldModel & wm )checkOpponent329,9837
+IntentionNormalDribble::doTurn( PlayerAgent * agent )doTurn425,13295
+IntentionNormalDribble::doDash( PlayerAgent * agent )doDash471,14592
+Bhv_NormalDribble::Bhv_NormalDribble( const CooperativeAction & action,Bhv_NormalDribble562,17449
+Bhv_NormalDribble::execute( PlayerAgent * agent )execute589,18362
+
+chain_action/bhv_normal_dribble.h,699
+#define BHV_NORMAL_DRIBBLE_HBHV_NORMAL_DRIBBLE_H33,961
+class Bhv_NormalDribbleBhv_NormalDribble44,1162
+    rcsc::Vector2D M_target_point;M_target_point47,1231
+    double M_first_ball_speed;M_first_ball_speed49,1267
+    double M_first_turn_moment;M_first_turn_moment50,1298
+    double M_first_dash_power;M_first_dash_power51,1330
+    rcsc::AngleDeg M_first_dash_angle;M_first_dash_angle52,1361
+    int M_total_step;M_total_step54,1401
+    int M_kick_step;M_kick_step55,1423
+    int M_turn_step;M_turn_step56,1444
+    int M_dash_step;M_dash_step57,1465
+    rcsc::NeckAction::Ptr M_neck_action;M_neck_action59,1487
+    rcsc::ViewAction::Ptr M_view_action;M_view_action60,1528
+
+chain_action/bhv_pass_kick_find_receiver.cpp,1288
+class IntentionPassKickFindReceiverIntentionPassKickFindReceiver73,2042
+    int M_step;M_step76,2118
+    int M_receiver_unum;M_receiver_unum77,2134
+    Vector2D M_receive_point;M_receive_point78,2159
+    IntentionPassKickFindReceiver( const int receiver_unum,IntentionPassKickFindReceiver82,2199
+IntentionPassKickFindReceiver::finished( const PlayerAgent * agent )finished102,2639
+Bhv_PassKickFindReceiver::Bhv_PassKickFindReceiver( const ActionChainGraph & chain_graph )Bhv_PassKickFindReceiver203,5100
+IntentionPassKickFindReceiver::execute( PlayerAgent * agent )execute214,5318
+Bhv_PassKickFindReceiver::execute( PlayerAgent * agent )execute273,7208
+Bhv_PassKickFindReceiver::doPassKick( PlayerAgent * agent,doPassKick393,10221
+Bhv_PassKickFindReceiver::kickStep( const WorldModel & wm,kickStep430,11422
+Bhv_PassKickFindReceiver::doCheckReceiver( PlayerAgent * agent,doCheckReceiver460,12235
+Bhv_PassKickFindReceiver::doKeepBall( rcsc::PlayerAgent * agent,doKeepBall600,16574
+Bhv_PassKickFindReceiver::getKeepBallVel( const rcsc::WorldModel & wm )getKeepBallVel662,18528
+Bhv_PassKickFindReceiver::doTurnBodyNeckToReceiver( PlayerAgent * agent,doTurnBodyNeckToReceiver821,23633
+Bhv_PassKickFindReceiver::doSayPass( PlayerAgent * agent,doSayPass963,28366
+
+chain_action/bhv_pass_kick_find_receiver.h,235
+#define BHV_PASS_KICK_FIND_RECEIVER_HBHV_PASS_KICK_FIND_RECEIVER_H33,980
+namespace rcsc {rcsc38,1092
+class Bhv_PassKickFindReceiverBhv_PassKickFindReceiver49,1288
+    const ActionChainGraph & M_chain_graph;M_chain_graph53,1365
+
+chain_action/bhv_strict_check_shoot.cpp,168
+Bhv_StrictCheckShoot::execute( PlayerAgent * agent )execute54,1436
+Bhv_StrictCheckShoot::doTurnNeckToShootPoint( PlayerAgent * agent,doTurnNeckToShootPoint145,4303
+
+chain_action/bhv_strict_check_shoot.h,177
+#define BHV_STRICT_CHECK_SHOOT_HBHV_STRICT_CHECK_SHOOT_H33,995
+class Bhv_StrictCheckShootBhv_StrictCheckShoot42,1177
+    Bhv_StrictCheckShoot()Bhv_StrictCheckShoot50,1311
+
+chain_action/body_force_shoot.cpp,129
+Body_ForceShoot::Body_ForceShoot()Body_ForceShoot50,1282
+Body_ForceShoot::execute( rcsc::PlayerAgent * agent )execute59,1407
+
+chain_action/body_force_shoot.h,99
+#define BODY_FORCE_SHOOT_HBODY_FORCE_SHOOT_H33,917
+class Body_ForceShootBody_ForceShoot41,1053
+
+chain_action/clear_ball.cpp,87
+namespace rcsc {rcsc36,942
+ClearBall::ClearBall( const int kicker,ClearBall42,1041
+
+chain_action/clear_ball.h,105
+#define CLEAR_BALL_HCLEAR_BALL_H33,959
+namespace rcsc {rcsc37,1014
+class ClearBallClearBall39,1032
+
+chain_action/clear_generator.cpp,953
+#define DEBUG_PROFILEDEBUG_PROFILE50,1235
+#define DEBUG_PRINTDEBUG_PRINT51,1257
+#define DEBUG_PREDICT_OPPONENT_REACH_STEPDEBUG_PREDICT_OPPONENT_REACH_STEP52,1277
+ClearGenerator::ClearGenerator()ClearGenerator61,1476
+ClearGenerator::instance()instance74,1684
+ClearGenerator::clear()clear85,1863
+ClearGenerator::generate( const WorldModel & wm )generate96,2024
+ClearGenerator::createCourses( const WorldModel & wm )createCourses139,2888
+struct OpponentAngleCompare {OpponentAngleCompare345,10698
+    const AngleDeg ball_move_angle_;ball_move_angle_346,10728
+    OpponentAngleCompare( const AngleDeg & angle )OpponentAngleCompare347,10765
+    bool operator()( const AbstractPlayerObject * lhs,operator ()351,10863
+ClearGenerator::predictOpponentsReachStep( const WorldModel & wm,predictOpponentsReachStep366,11222
+ClearGenerator::predictOpponentReachStep( const AbstractPlayerObject * opponent,predictOpponentReachStep421,12852
+
+chain_action/clear_generator.h,404
+#define CROSS_GENERATOR_HCROSS_GENERATOR_H33,923
+namespace rcsc {rcsc42,1064
+class ClearGenerator {ClearGenerator49,1151
+    rcsc::GameTime M_update_time;M_update_time52,1184
+    int M_total_count;M_total_count53,1218
+    std::vector< CooperativeAction::Ptr > M_courses;M_courses55,1242
+    const std::vector< CooperativeAction::Ptr > & courses( const rcsc::WorldModel & wm )courses72,1575
+
+chain_action/cooperative_action.cpp,1249
+CooperativeAction::CooperativeAction( const ActionCategory & category,CooperativeAction42,1062
+CooperativeAction::setCategory( const ActionCategory & category )setCategory71,1966
+CooperativeAction::setPlayerUnum( const int unum )setPlayerUnum81,2150
+CooperativeAction::setTargetPlayerUnum( const int unum )setTargetPlayerUnum91,2318
+CooperativeAction::setTargetPoint( const Vector2D & point )setTargetPoint101,2499
+CooperativeAction::setFirstBallSpeed( const double & speed )setFirstBallSpeed111,2678
+CooperativeAction::setFirstTurnMoment( const double & moment )setFirstTurnMoment121,2862
+CooperativeAction::setFirstDashPower( const double & power )setFirstDashPower131,3050
+CooperativeAction::setFirstDashAngle( const AngleDeg & angle )setFirstDashAngle141,3234
+CooperativeAction::setDurationStep( const int duration_step )setDurationStep151,3420
+CooperativeAction::setKickCount( const int count )setKickCount161,3610
+CooperativeAction::setDashCount( const int count )setDashCount171,3778
+CooperativeAction::setTurnCount( const int count )setTurnCount181,3946
+CooperativeAction::setFinalAction( const bool on )setFinalAction191,4114
+CooperativeAction::setDescription( const char * description )setDescription201,4281
+
+chain_action/cooperative_action.h,3468
+#define COOPERATIVE_ACTION_HCOOPERATIVE_ACTION_H33,974
+class CooperativeAction {CooperativeAction45,1201
+    typedef boost::shared_ptr< CooperativeAction > Ptr; //!< pointer typePtr48,1236
+    typedef boost::shared_ptr< const CooperativeAction > ConstPtr; //!< const pointer typeConstPtr49,1310
+    enum ActionCategory {ActionCategory55,1487
+        Hold,Hold56,1513
+        Dribble,Dribble57,1527
+        Pass,Pass58,1544
+        Shoot,Shoot59,1558
+        Clear,Clear60,1573
+        Move,Move61,1588
+        NoAction,NoAction63,1603
+    ActionCategory M_category; //!< action category typeM_category68,1639
+    int M_index;M_index69,1696
+    int M_player_unum; //!< acting player's uniform numberM_player_unum71,1714
+    int M_target_player_unum; //!< action target player's uniform numberM_target_player_unum72,1773
+    rcsc::Vector2D M_target_point; //!< action end pointM_target_point74,1847
+    double M_first_ball_speed; //!< first ball speed (if necessary)M_first_ball_speed76,1905
+    double M_first_turn_moment; //!< first turn moment (if necessary)M_first_turn_moment77,1973
+    double M_first_dash_power; //!< first dash speed (if necessary)M_first_dash_power78,2043
+    rcsc::AngleDeg M_first_dash_angle; //!< first dash angle (relative to body) (if necessary)M_first_dash_angle79,2111
+    int M_duration_step; //!< action duration periodM_duration_step81,2207
+    int M_kick_count; //!< kick count (if necessary)M_kick_count83,2261
+    int M_turn_count; //!< dash count (if necessary)M_turn_count84,2314
+    int M_dash_count; //!< dash count (if necessary)M_dash_count85,2367
+    bool M_final_action; //!< if this value is true, this action is the final one of action chain.M_final_action87,2421
+    const char * M_description; //!< description message for debugging purposeM_description89,2521
+    ~CooperativeAction()~CooperativeAction122,3652
+    void setIndex( const int i ) { M_index = i; }setIndex125,3688
+    const ActionCategory & category() const { return M_category; }category144,4252
+    int index() const { return M_index; }index148,4336
+    const char * description() const { return M_description; }description152,4395
+    int playerUnum() const { return M_player_unum; }playerUnum156,4475
+    int targetPlayerUnum() const { return M_target_player_unum; }targetPlayerUnum160,4545
+    const rcsc::Vector2D & targetPoint() const { return M_target_point; }targetPoint164,4628
+    const double & firstBallSpeed() const { return M_first_ball_speed; }firstBallSpeed168,4719
+    const double & firstTurnMoment() const { return M_first_turn_moment; }firstTurnMoment172,4809
+    const double & firstDashPower() const { return M_first_dash_power; }firstDashPower176,4901
+    const rcsc::AngleDeg & firstDashAngle() const { return M_first_dash_angle; }firstDashAngle180,4991
+    int durationStep() const { return M_duration_step; }durationStep184,5089
+    int kickCount() const { return M_kick_count; }kickCount188,5163
+    int turnCount() const { return M_turn_count; }turnCount192,5231
+    int dashCount() const { return M_dash_count; }dashCount196,5299
+    bool isFinalAction() const { return M_final_action; }isFinalAction200,5367
+    struct DistCompare {DistCompare208,5450
+        const rcsc::Vector2D pos_;pos_209,5475
+        DistCompare( const rcsc::Vector2D & pos )DistCompare215,5560
+        bool operator()( const Ptr & lhs,operator ()219,5651
+
+chain_action/cross_generator.cpp,957
+#define USE_ONLY_MAX_ANGLE_WIDTHUSE_ONLY_MAX_ANGLE_WIDTH48,1241
+#define DEBUG_PROFILEDEBUG_PROFILE50,1275
+debug_paint_failed( const int count,debug_paint_failed61,1444
+CrossGenerator::CrossGenerator()CrossGenerator80,1912
+CrossGenerator::instance()instance92,2093
+CrossGenerator::clear()clear103,2272
+CrossGenerator::generate( const WorldModel & wm )generate118,2590
+CrossGenerator::updatePasser( const WorldModel & wm )updatePasser184,4061
+CrossGenerator::updateReceivers( const WorldModel & wm )updateReceivers266,6261
+CrossGenerator::updateOpponents( const WorldModel & wm )updateOpponents326,8100
+CrossGenerator::createCourses( const WorldModel & wm )createCourses366,9195
+CrossGenerator::createCross( const WorldModel & wm,createCross381,9524
+CrossGenerator::checkOpponent( const Vector2D & first_ball_pos,checkOpponent600,18770
+CrossGenerator::getMinimumAngleWidth( const double & target_dist,getMinimumAngleWidth741,24260
+
+chain_action/cross_generator.h,636
+#define CROSS_GENERATOR_HCROSS_GENERATOR_H33,923
+namespace rcsc {rcsc43,1098
+class CrossGenerator {CrossGenerator49,1157
+    int M_total_count;M_total_count51,1189
+    const rcsc::AbstractPlayerObject * M_passer; //!< estimated passerM_passer53,1213
+    rcsc::Vector2D M_first_point;M_first_point54,1284
+    rcsc::AbstractPlayerCont M_receiver_candidates;M_receiver_candidates56,1319
+    rcsc::AbstractPlayerCont M_opponents;M_opponents57,1371
+    std::vector< CooperativeAction::Ptr > M_courses;M_courses59,1414
+    const std::vector< CooperativeAction::Ptr > & courses( const rcsc::WorldModel & wm )courses76,1747
+
+chain_action/dribble.cpp,83
+namespace rcsc {rcsc39,994
+Dribble::Dribble( const int dribbler,Dribble45,1093
+
+chain_action/dribble.h,95
+#define DRIBBLE_HDRIBBLE_H33,943
+namespace rcsc {rcsc43,1114
+class DribbleDribble45,1132
+
+chain_action/field_analyzer.cpp,3075
+FieldAnalyzer::FieldAnalyzer()FieldAnalyzer63,1628
+FieldAnalyzer::instance()instance73,1762
+FieldAnalyzer::estimate_virtual_dash_distance( const rcsc::AbstractPlayerObject * player )estimate_virtual_dash_distance84,1941
+FieldAnalyzer::predict_player_turn_cycle( const rcsc::PlayerType * ptype,predict_player_turn_cycle106,2686
+FieldAnalyzer::predict_self_reach_cycle( const WorldModel & wm,predict_self_reach_cycle157,4320
+FieldAnalyzer::predict_player_reach_cycle( const AbstractPlayerObject * player,predict_player_reach_cycle287,8170
+FieldAnalyzer::predict_kick_count( const WorldModel & wm,predict_kick_count386,11964
+FieldAnalyzer::get_ball_field_line_cross_point( const Vector2D & ball_from,get_ball_field_line_cross_point427,13035
+FieldAnalyzer::get_field_bound_predict_ball_pos( const WorldModel & wm,get_field_bound_predict_ball_pos459,13995
+struct Player {Player523,16408
+    const AbstractPlayerObject * player_;player_524,16424
+    AngleDeg angle_from_pos_;angle_from_pos_525,16466
+    double hide_angle_;hide_angle_526,16496
+    Player( const AbstractPlayerObject * player,Player528,16521
+    struct Compare {Compare545,17257
+        bool operator()( const Player & lhs,operator ()546,17278
+FieldAnalyzer::can_shoot_from( const bool is_self,can_shoot_from561,17581
+FieldAnalyzer::opponent_can_shoot_from( const Vector2D & pos,opponent_can_shoot_from704,22285
+FieldAnalyzer::get_dist_player_nearest_to_point( const Vector2D & point,get_dist_player_nearest_to_point906,30051
+FieldAnalyzer::get_our_team_near_goal_post_pos( const Vector2D & point )get_our_team_near_goal_post_pos946,30958
+FieldAnalyzer::get_our_team_far_goal_post_pos( const Vector2D & point )get_our_team_far_goal_post_pos959,31280
+FieldAnalyzer::get_opponent_team_near_goal_post_pos( const Vector2D & point )get_opponent_team_near_goal_post_pos972,31601
+FieldAnalyzer::get_opponent_team_far_goal_post_pos( const Vector2D & point )get_opponent_team_far_goal_post_pos985,31928
+FieldAnalyzer::get_dist_from_our_near_goal_post( const Vector2D & point )get_dist_from_our_near_goal_post998,32252
+FieldAnalyzer::get_dist_from_opponent_near_goal_post( const Vector2D & point )get_dist_from_opponent_near_goal_post1015,32793
+FieldAnalyzer::get_pass_count( const PredictState & state,get_pass_count1032,33336
+FieldAnalyzer::is_ball_moving_to_our_goal( const Vector2D & ball_pos,is_ball_moving_to_our_goal1080,34511
+FieldAnalyzer::to_be_final_action( const PredictState & state )to_be_final_action1101,35398
+FieldAnalyzer::to_be_final_action( const WorldModel & wm )to_be_final_action1111,35639
+FieldAnalyzer::to_be_final_action( const Vector2D & ball_pos,to_be_final_action1121,35869
+FieldAnalyzer::get_blocker( const WorldModel & wm,get_blocker1146,36421
+FieldAnalyzer::get_blocker( const WorldModel & wm,get_blocker1161,36910
+FieldAnalyzer::update( const WorldModel & wm )update1205,38175
+FieldAnalyzer::updateVoronoiDiagram( const WorldModel & wm )updateVoronoiDiagram1242,38908
+FieldAnalyzer::writeDebugLog()writeDebugLog1296,41002
+
+chain_action/field_analyzer.h,820
+#define FIELD_ANALYZER_HFIELD_ANALYZER_H33,947
+namespace rcsc {rcsc42,1130
+class FieldAnalyzer {FieldAnalyzer52,1273
+    rcsc::VoronoiDiagram M_all_players_voronoi_diagram;M_all_players_voronoi_diagram55,1305
+    rcsc::VoronoiDiagram M_teammates_voronoi_diagram;M_teammates_voronoi_diagram56,1361
+    rcsc::VoronoiDiagram M_pass_voronoi_diagram;M_pass_voronoi_diagram57,1415
+    const FieldAnalyzer & i()i66,1550
+    const rcsc::VoronoiDiagram & allPlayersVoronoiDiagram() constallPlayersVoronoiDiagram71,1626
+    const rcsc::VoronoiDiagram & teammatesVoronoiDiagram() constteammatesVoronoiDiagram76,1757
+    const rcsc::VoronoiDiagram & passVoronoiDiagram() constpassVoronoiDiagram81,1885
+FieldAnalyzer::estimate_min_reach_cycle( const rcsc::Vector2D & player_pos,estimate_min_reach_cycle257,8884
+
+chain_action/field_evaluator.h,411
+#define RCSC_PLAYER_FIELD_EVALUATOR_HRCSC_PLAYER_FIELD_EVALUATOR_H26,786
+class FieldEvaluator {FieldEvaluator44,1164
+    typedef boost::shared_ptr< FieldEvaluator > Ptr; //!< pointer type aliasPtr47,1196
+    typedef boost::shared_ptr< const FieldEvaluator > ConstPtr; //!< const pointer type aliasConstPtr48,1273
+    FieldEvaluator()FieldEvaluator54,1469
+    ~FieldEvaluator()~FieldEvaluator62,1569
+
+chain_action/hold_ball.cpp,84
+namespace rcsc {rcsc36,933
+HoldBall::HoldBall( const int player,HoldBall42,1032
+
+chain_action/hold_ball.h,101
+#define HOLD_BALL_HHOLD_BALL_H33,956
+namespace rcsc {rcsc37,1010
+class HoldBallHoldBall39,1028
+
+chain_action/neck_turn_to_receiver.cpp,254
+Neck_TurnToReceiver::Neck_TurnToReceiver( const ActionChainGraph & chain_graph )Neck_TurnToReceiver52,1374
+Neck_TurnToReceiver::execute( PlayerAgent * agent )execute63,1582
+Neck_TurnToReceiver::executeImpl( PlayerAgent * agent )executeImpl101,2632
+
+chain_action/neck_turn_to_receiver.h,233
+#define NECK_TURN_TO_RECEIVER_HNECK_TURN_TO_RECEIVER_H28,853
+class Neck_TurnToReceiverNeck_TurnToReceiver34,951
+    const ActionChainGraph & M_chain_graph;M_chain_graph37,1018
+    rcsc::NeckAction * clone() constclone45,1186
+
+chain_action/pass.cpp,72
+namespace rcsc {rcsc39,985
+Pass::Pass( const int passer,Pass45,1084
+
+chain_action/pass.h,82
+#define PASS_HPASS_H33,934
+namespace rcsc {rcsc37,983
+class PassPass39,1001
+
+chain_action/pass_checker.h,153
+#define PASS_CHECKER_HPASS_CHECKER_H28,842
+namespace rcsc {rcsc32,894
+class PassChecker {PassChecker37,958
+    ~PassChecker()~PassChecker41,1002
+
+chain_action/predict_ball_object.h,750
+#define RCSC_PLAYER_PREDICT_BALL_OBJECT_HRCSC_PLAYER_PREDICT_BALL_OBJECT_H33,1007
+class PredictBallObject {PredictBallObject41,1156
+    rcsc::Vector2D M_pos;M_pos43,1191
+    rcsc::Vector2D M_vel;M_vel44,1217
+    PredictBallObject()PredictBallObject47,1252
+    PredictBallObject( const rcsc::Vector2D & pos )PredictBallObject52,1344
+    PredictBallObject( const rcsc::Vector2D & pos,PredictBallObject57,1459
+    PredictBallObject & assign( const rcsc::Vector2D & pos,assign63,1620
+    PredictBallObject & setPos( const rcsc::Vector2D & pos )setPos71,1828
+    PredictBallObject & setVel( const rcsc::Vector2D & vel )setVel77,1953
+    const rcsc::Vector2D & pos() constpos83,2078
+    const rcsc::Vector2D & vel() constvel88,2158
+
+chain_action/predict_player_object.h,1425
+#define RCSC_PLAYER_PREDICT_PLAYER_OBJECT_HRCSC_PLAYER_PREDICT_PLAYER_OBJECT_H33,1013
+class PredictPlayerObjectPredictPlayerObject50,1360
+    typedef boost::shared_ptr< PredictPlayerObject > Ptr; //! pointer type aliasPtr54,1437
+    typedef boost::shared_ptr< const PredictPlayerObject > ConstPtr; //! pointer type aliasConstPtr55,1518
+    bool M_valid;M_valid59,1623
+    bool M_is_self;M_is_self60,1641
+    bool M_is_ghost;M_is_ghost61,1661
+    int M_ghost_count;M_ghost_count62,1682
+    void copyPlayerInfo( const rcsc::AbstractPlayerObject & pl )copyPlayerInfo68,1831
+    PredictPlayerObject()PredictPlayerObject112,2923
+    PredictPlayerObject( const rcsc::AbstractPlayerObject & player )PredictPlayerObject124,3240
+    PredictPlayerObject( const rcsc::AbstractPlayerObject & player,PredictPlayerObject134,3540
+    PredictPlayerObject( const rcsc::SideID side,PredictPlayerObject145,3842
+    ~PredictPlayerObject()~PredictPlayerObject198,5103
+    bool isValid() constisValid207,5301
+    bool isSelf() constisSelf218,5538
+    bool isGhost() constisGhost228,5746
+    int ghostCount() constghostCount238,5946
+    bool isTackling() constisTackling248,6127
+    void setPos( const rcsc::Vector2D & p )setPos259,6327
+    void setDistFromBall( const double dist )setDistFromBall270,6554
+typedef std::vector< PredictPlayerObject::Ptr > PredictPlayerPtrCont;PredictPlayerPtrCont277,6680
+
+chain_action/predict_state.cpp,583
+const int PredictState::VALID_PLAYER_THRESHOLD = 8;VALID_PLAYER_THRESHOLD46,1111
+PredictState::PredictState( const WorldModel & wm )PredictState52,1245
+PredictState::PredictState( const PredictState & rhs,PredictState69,1638
+PredictState::PredictState( const PredictState & rhs,PredictState87,2213
+PredictState::PredictState( const PredictState & rhs,PredictState112,3241
+PredictState::init( const WorldModel & wm )init132,3895
+PredictState::updateLines()updateLines212,5530
+PredictState::getPlayerCont( const PlayerPredicate * predicate ) constgetPlayerCont240,6299
+
+chain_action/predict_state.h,2659
+#define RCSC_PLAYER_PREDICT_STATE_HRCSC_PLAYER_PREDICT_STATE_H33,954
+class PredictState {PredictState48,1314
+    static const int VALID_PLAYER_THRESHOLD;VALID_PLAYER_THRESHOLD50,1343
+    typedef boost::shared_ptr< PredictState > Ptr; //!< pointer type aliasPtr52,1389
+    typedef boost::shared_ptr< const PredictState > ConstPtr; //!< const pointer type aliasConstPtr53,1464
+    const rcsc::WorldModel * M_world;M_world56,1566
+    unsigned long M_spend_time;M_spend_time57,1604
+    int M_ball_holder_unum;M_ball_holder_unum59,1637
+    PredictBallObject M_ball;M_ball61,1666
+    int M_self_unum;M_self_unum63,1697
+    PredictPlayerPtrCont M_our_players;M_our_players65,1719
+    double M_our_defense_line_x;M_our_defense_line_x68,1761
+    double M_our_offense_player_line_x;M_our_offense_player_line_x69,1794
+    unsigned long spendTime() constspendTime95,2436
+    int ballHolderUnum() constballHolderUnum100,2520
+    const rcsc::AbstractPlayerObject * ballHolder() constballHolder105,2605
+    const PredictBallObject & ball() constball117,2922
+    const rcsc::AbstractPlayerObject & self() constself122,3007
+    const rcsc::AbstractPlayerObject * ourPlayer( const int unum ) constourPlayer135,3428
+    const rcsc::AbstractPlayerObject * theirPlayer( const int unum ) consttheirPlayer148,3886
+    const PredictPlayerPtrCont & ourPlayers() constourPlayers153,4025
+    const rcsc::PlayerCont & opponents() constopponents158,4126
+    const rcsc::AbstractPlayerCont & theirPlayers() consttheirPlayers163,4229
+    const rcsc::PlayerPtrCont & opponentsFromSelf() constopponentsFromSelf168,4346
+    const rcsc::PlayerObject * getOpponentNearestTo( const rcsc::Vector2D & point,getOpponentNearestTo173,4468
+    const rcsc::PlayerType * ourPlayerType( const int unum ) constourPlayerType180,4809
+    const rcsc::AbstractPlayerObject * getOurGoalie() constgetOurGoalie185,4942
+    const rcsc::PlayerObject * getOpponentGoalie() constgetOpponentGoalie195,5235
+    const rcsc::GameMode & gameMode() constgameMode200,5356
+    const rcsc::GameTime & currentTime() constcurrentTime205,5455
+    rcsc::SideID ourSide() constourSide210,5553
+    double offsideLineX() constoffsideLineX215,5640
+    double ourDefenseLineX() constourDefenseLineX220,5759
+    double ourOffensePlayerLineX() constourOffensePlayerLineX225,5850
+    double theirDefensePlayerLineX() consttheirDefensePlayerLineX230,5954
+    int dirCount( const rcsc::AngleDeg & angle )dirCount235,6067
+    int dirRangeCount( const rcsc::AngleDeg & angle,dirRangeCount240,6178
+    const rcsc::AudioMemory & audioMemory() constaudioMemory250,6551
+
+chain_action/self_pass_generator.cpp,648
+#define DEBUG_PROFILEDEBUG_PROFILE50,1239
+debug_paint_failed( const int count,debug_paint_failed66,1515
+SelfPassGenerator::SelfPassGenerator()SelfPassGenerator85,1987
+SelfPassGenerator::instance()instance97,2176
+SelfPassGenerator::clear()clear108,2361
+SelfPassGenerator::generate( const WorldModel & wm )generate119,2525
+SelfPassGenerator::createCourses( const WorldModel & wm )createCourses164,3477
+SelfPassGenerator::createSelfCache( const WorldModel & wm,createSelfCache334,9268
+SelfPassGenerator::canKick( const WorldModel & wm,canKick452,13361
+SelfPassGenerator::checkOpponent( const WorldModel & wm,checkOpponent574,17963
+
+chain_action/self_pass_generator.h,418
+#define SELF_PASS_GENERATOR_HSELF_PASS_GENERATOR_H33,971
+namespace rcsc {rcsc43,1164
+class SelfPassGenerator {SelfPassGenerator48,1222
+    rcsc::GameTime M_update_time;M_update_time51,1258
+    int M_total_count;M_total_count52,1292
+    std::vector< CooperativeAction::Ptr > M_courses;M_courses54,1316
+    const std::vector< CooperativeAction::Ptr > & courses( const rcsc::WorldModel & wm )courses69,1665
+
+chain_action/shoot.cpp,76
+namespace rcsc {rcsc36,921
+Shoot::Shoot( const int shooter,Shoot42,1020
+
+chain_action/shoot.h,86
+#define SHOOT_HSHOOT_H33,937
+namespace rcsc {rcsc37,987
+class ShootShoot39,1005
+
+chain_action/shoot_generator.cpp,750
+#define SEARCH_UNTIL_MAX_SPEED_AT_SAME_POINTSEARCH_UNTIL_MAX_SPEED_AT_SAME_POINT49,1295
+#define DEBUG_PROFILEDEBUG_PROFILE51,1341
+ShootGenerator::ShootGenerator()ShootGenerator65,1600
+ShootGenerator::instance()instance77,1779
+ShootGenerator::clear()clear88,1958
+ShootGenerator::generate( const WorldModel & wm )generate99,2119
+ShootGenerator::createShoot( const WorldModel & wm,createShoot203,4857
+ShootGenerator::createShoot( const WorldModel & wm,createShoot334,9066
+ShootGenerator::maybeGoalieCatch( const PlayerObject * goalie,maybeGoalieCatch436,12085
+ShootGenerator::opponentCanReach( const PlayerObject * opponent,opponentCanReach610,18393
+ShootGenerator::evaluateCourses( const WorldModel & wm )evaluateCourses747,23084
+
+chain_action/shoot_generator.h,1519
+#define SHOOT_GENERATOR_HSHOOT_GENERATOR_H33,972
+namespace rcsc {rcsc41,1102
+class ShootGenerator {ShootGenerator51,1243
+    struct Course {Course58,1338
+        int index_;index_59,1358
+        rcsc::Vector2D target_point_; //!< target point on the goal linetarget_point_60,1378
+        rcsc::Vector2D first_ball_vel_; //!< first ball velocityfirst_ball_vel_61,1451
+        double first_ball_speed_; //!< first ball speedfirst_ball_speed_62,1516
+        rcsc::AngleDeg ball_move_angle_; //!< shoot angleball_move_angle_63,1572
+        double ball_move_dist_; //!< ball move distanceball_move_dist_64,1630
+        int ball_reach_step_; //!< ball reach stepball_reach_step_65,1686
+        bool goalie_never_reach_; //!< true if goalie never reach the ballgoalie_never_reach_66,1737
+        bool opponent_never_reach_; //!< true if goalie never reach the ballopponent_never_reach_67,1812
+        int kick_step_; //!< estimated kick stepkick_step_68,1889
+        double score_; //!< evaluated value of this shootscore_69,1938
+        Course( const int index,Course77,2184
+    typedef std::vector< Course > Container;Container99,3109
+    struct ScoreCmpScoreCmp105,3252
+        result_type operator()( const first_argument_type & lhs,operator ()114,3563
+    int M_total_count;M_total_count124,3810
+    rcsc::Vector2D M_first_ball_pos;M_first_ball_pos127,3862
+    Container M_courses;M_courses130,3939
+    const Container & courses( const rcsc::WorldModel & wm )courses150,4421
+
+chain_action/short_dribble_generator.cpp,902
+#define DEBUG_PROFILEDEBUG_PROFILE54,1357
+debug_paint_failed( const int count,debug_paint_failed68,1598
+ShortDribbleGenerator::ShortDribbleGenerator()ShortDribbleGenerator86,2041
+ShortDribbleGenerator::instance()instance99,2277
+ShortDribbleGenerator::clear()clear110,2470
+ShortDribbleGenerator::generate( const WorldModel & wm )generate123,2725
+ShortDribbleGenerator::setQueuedAction( const rcsc::WorldModel & wm,setQueuedAction196,4353
+ShortDribbleGenerator::createCourses( const WorldModel & wm )createCourses208,4653
+ShortDribbleGenerator::simulateDashes( const WorldModel & wm )simulateDashes305,7078
+ShortDribbleGenerator::simulateKickTurnsDashes( const WorldModel & wm,simulateKickTurnsDashes520,14631
+ShortDribbleGenerator::createSelfCache( const WorldModel & wm,createSelfCache653,19930
+ShortDribbleGenerator::checkOpponent( const WorldModel & wm,checkOpponent708,21643
+
+chain_action/short_dribble_generator.h,696
+#define SHORT_DRIBBLE_GENERATOR_HSHORT_DRIBBLE_GENERATOR_H33,995
+namespace rcsc {rcsc43,1192
+class ShortDribbleGenerator {ShortDribbleGenerator48,1250
+    rcsc::GameTime M_update_time;M_update_time51,1290
+    int M_total_count;M_total_count52,1324
+    rcsc::Vector2D M_first_ball_pos;M_first_ball_pos54,1348
+    rcsc::Vector2D M_first_ball_vel;M_first_ball_vel55,1385
+    rcsc::GameTime M_queued_action_time;M_queued_action_time57,1423
+    CooperativeAction::Ptr M_queued_action;M_queued_action58,1464
+    std::vector< CooperativeAction::Ptr > M_courses;M_courses60,1509
+    const std::vector< CooperativeAction::Ptr > & courses( const rcsc::WorldModel & wm )courses78,1997
+
+chain_action/simple_pass_checker.cpp,1056
+static const double GOALIE_PASS_EVAL_THRESHOLD = 17.5;GOALIE_PASS_EVAL_THRESHOLD41,1079
+static const double BACK_PASS_EVAL_THRESHOLD = 17.5;BACK_PASS_EVAL_THRESHOLD42,1134
+static const double PASS_EVAL_THRESHOLD = 14.5;PASS_EVAL_THRESHOLD43,1187
+static const double CHANCE_PASS_EVAL_THRESHOLD = 14.5;CHANCE_PASS_EVAL_THRESHOLD44,1235
+static const double PASS_RECEIVER_PREDICT_STEP = 2.5;PASS_RECEIVER_PREDICT_STEP45,1290
+static const double PASS_REFERENCE_SPEED = 2.5;PASS_REFERENCE_SPEED47,1345
+static const double PASS_SPEED_THRESHOLD = 1.5;PASS_SPEED_THRESHOLD49,1394
+static const double NEAR_PASS_DIST_THR = 4.0;NEAR_PASS_DIST_THR51,1443
+static const double FAR_PASS_DIST_THR = 35.0;FAR_PASS_DIST_THR52,1489
+static const long VALID_TEAMMATE_ACCURACY = 8;VALID_TEAMMATE_ACCURACY54,1536
+static const long VALID_OPPONENT_ACCURACY = 20;VALID_OPPONENT_ACCURACY55,1583
+static const double OPPONENT_DIST_THR2 = std::pow( 5.0, 2 );OPPONENT_DIST_THR256,1631
+SimplePassChecker::operator()( const PredictState & state,operator ()63,1779
+
+chain_action/simple_pass_checker.h,157
+#define SIMPLE_PASS_CHECKER_HSIMPLE_PASS_CHECKER_H28,849
+class SimplePassCheckerSimplePassChecker32,907
+    SimplePassChecker()SimplePassChecker37,968
+
+chain_action/strict_check_pass_generator.cpp,2181
+#define DEBUG_PROFILEDEBUG_PROFILE55,1417
+debug_paint_failed_pass( const int count,debug_paint_failed_pass81,1912
+StrictCheckPassGenerator::Receiver::Receiver( const AbstractPlayerObject * p,Receiver103,2438
+StrictCheckPassGenerator::Opponent::Opponent( const AbstractPlayerObject * p )Opponent121,3183
+StrictCheckPassGenerator::StrictCheckPassGenerator()StrictCheckPassGenerator135,3623
+StrictCheckPassGenerator::instance()instance154,4078
+StrictCheckPassGenerator::clear()clear165,4277
+StrictCheckPassGenerator::generate( const WorldModel & wm )generate183,4713
+StrictCheckPassGenerator::updatePasser( const WorldModel & wm )updatePasser257,6558
+struct ReceiverAngleCompare {ReceiverAngleCompare339,8827
+    bool operator()( const StrictCheckPassGenerator::Receiver & lhs,operator ()341,8858
+struct ReceiverDistCompare {ReceiverDistCompare353,9196
+    const Vector2D pos_;pos_355,9226
+    ReceiverDistCompare( const Vector2D & pos )ReceiverDistCompare357,9252
+    bool operator()( const StrictCheckPassGenerator::Receiver & lhs,operator ()361,9333
+StrictCheckPassGenerator::updateReceivers( const WorldModel & wm )updateReceivers374,9652
+StrictCheckPassGenerator::updateOpponents( const WorldModel & wm )updateOpponents459,12485
+StrictCheckPassGenerator::createCourses( const WorldModel & wm )createCourses485,13253
+StrictCheckPassGenerator::createDirectPass( const WorldModel & wm,createDirectPass519,14007
+StrictCheckPassGenerator::createLeadingPass( const WorldModel & wm,createLeadingPass657,18911
+StrictCheckPassGenerator::createThroughPass( const WorldModel & wm,createThroughPass875,27769
+StrictCheckPassGenerator::createPassCommon( const WorldModel & wm,createPassCommon1149,38273
+StrictCheckPassGenerator::getNearestReceiverUnum( const Vector2D & pos )getNearestReceiverUnum1436,48803
+StrictCheckPassGenerator::predictReceiverReachStep( const Receiver & receiver,predictReceiverReachStep1461,49374
+StrictCheckPassGenerator::predictOpponentsReachStep( const WorldModel & wm,predictOpponentsReachStep1543,52125
+StrictCheckPassGenerator::predictOpponentReachStep( const WorldModel & wm,predictOpponentReachStep1598,54241
+
+chain_action/strict_check_pass_generator.h,1898
+#define STRICT_CHECK_PASS_GENERATOR_HSTRICT_CHECK_PASS_GENERATOR_H33,963
+namespace rcsc {rcsc43,1164
+class StrictCheckPassGenerator {StrictCheckPassGenerator51,1264
+    struct Receiver {Receiver54,1306
+        const rcsc::AbstractPlayerObject * player_;player_55,1328
+        rcsc::Vector2D pos_;pos_56,1380
+        rcsc::Vector2D vel_;vel_57,1409
+        rcsc::Vector2D inertia_pos_;inertia_pos_58,1438
+        double speed_;speed_59,1475
+        double penalty_distance_;penalty_distance_60,1498
+        int penalty_step_;penalty_step_61,1532
+        rcsc::AngleDeg angle_from_ball_;angle_from_ball_62,1559
+    typedef std::vector< Receiver > ReceiverCont;ReceiverCont70,1768
+    struct Opponent {Opponent72,1819
+        const rcsc::AbstractPlayerObject * player_;player_73,1841
+        rcsc::Vector2D pos_;pos_74,1893
+        rcsc::Vector2D vel_;vel_75,1922
+        double speed_;speed_76,1951
+        double bonus_distance_;bonus_distance_77,1974
+    typedef std::vector< Opponent > OpponentCont;OpponentCont85,2134
+    rcsc::GameTime M_update_time;M_update_time89,2195
+    int M_total_count;M_total_count90,2229
+    char M_pass_type;M_pass_type91,2252
+    const rcsc::AbstractPlayerObject * M_passer; //!< estimated passer playerM_passer93,2275
+    rcsc::GameTime M_start_time; //!< pass action start timeM_start_time94,2353
+    rcsc::Vector2D M_first_point; //!< first ball pointM_first_point95,2414
+    ReceiverCont M_receiver_candidates;M_receiver_candidates97,2471
+    OpponentCont M_opponents;M_opponents98,2511
+    int M_direct_size;M_direct_size100,2542
+    int M_leading_size;M_leading_size101,2565
+    int M_through_size;M_through_size102,2589
+    std::vector< CooperativeAction::Ptr > M_courses;M_courses103,2613
+    const std::vector< CooperativeAction::Ptr > & courses( const rcsc::WorldModel & wm )courses120,3006
+
+chain_action/tackle_generator.cpp,1146
+#define ASUUME_OPPONENT_KICKASUUME_OPPONENT_KICK50,1298
+#define DEBUG_PROFILEDEBUG_PROFILE52,1328
+const int ANGLE_DIVS = 40;ANGLE_DIVS64,1541
+struct DeflectingEvaluator {DeflectingEvaluator70,1650
+    static const double not_shoot_ball_eval = 10000;not_shoot_ball_eval71,1679
+    double operator()( const WorldModel & wm,operator ()73,1733
+TackleGenerator::TackleResult::TackleResult()TackleResult136,4085
+TackleGenerator::TackleResult::TackleResult( const rcsc::AngleDeg & angle,TackleResult145,4230
+TackleGenerator::TackleResult::clear()clear161,4611
+TackleGenerator::TackleGenerator()TackleGenerator174,4898
+TackleGenerator::instance()instance185,5090
+TackleGenerator::clear()clear196,5271
+TackleGenerator::generate( const WorldModel & wm )generate207,5449
+TackleGenerator::calculate( const WorldModel & wm )calculate271,6835
+TackleGenerator::evaluate( const WorldModel & wm,evaluate400,11133
+TackleGenerator::predictOpponentsReachStep( const WorldModel & wm,predictOpponentsReachStep603,18924
+TackleGenerator::predictOpponentReachStep( const AbstractPlayerObject * opponent,predictOpponentReachStep664,21065
+
+chain_action/tackle_generator.h,827
+#define TACKLE_GENERATOR_HTACKLE_GENERATOR_H33,973
+namespace rcsc {rcsc40,1082
+class TackleGenerator {TackleGenerator49,1212
+    struct TackleResult {TackleResult52,1245
+        rcsc::AngleDeg tackle_angle_; //!< global angletackle_angle_53,1271
+        rcsc::Vector2D ball_vel_; //!< result ball velocityball_vel_54,1327
+        double ball_speed_;ball_speed_55,1387
+        rcsc::AngleDeg ball_move_angle_;ball_move_angle_56,1415
+        double score_;score_57,1456
+    typedef std::vector< TackleResult > Container;Container65,1638
+    Container M_candidates;M_candidates71,1729
+    TackleResult M_best_result;M_best_result74,1785
+    const Container & candidates( const rcsc::WorldModel & wm )candidates90,2108
+    const TackleResult & bestResult( const rcsc::WorldModel & wm )bestResult96,2246
+
+communication.h,270
+#define COMMUNICATION_HCOMMUNICATION_H33,920
+namespace rcsc {rcsc37,978
+class Communication {Communication41,1017
+    typedef boost::shared_ptr< Communication > Ptr;Ptr44,1048
+    Communication()Communication48,1113
+    ~Communication()~Communication54,1165
+
+intention_receive.cpp,231
+IntentionReceive::IntentionReceive( const Vector2D & target_point,IntentionReceive56,1510
+IntentionReceive::finished( const PlayerAgent * agent )finished75,2067
+IntentionReceive::execute( PlayerAgent * agent )execute127,3327
+
+intention_receive.h,403
+#define TOKYOTECH_INTENAION_RECEIVE_HTOKYOTECH_INTENAION_RECEIVE_H28,859
+class IntentionReceiveIntentionReceive35,1003
+    const rcsc::Vector2D M_target_point; // global coordinateM_target_point38,1072
+    const double M_dash_power;M_dash_power39,1134
+    const double M_buffer;M_buffer40,1165
+    int M_step;M_step41,1192
+    rcsc::GameTime M_last_execute_time;M_last_execute_time43,1209
+
+intention_wait_after_set_play_kick.cpp,265
+IntentionWaitAfterSetPlayKick::IntentionWaitAfterSetPlayKick()IntentionWaitAfterSetPlayKick47,1182
+IntentionWaitAfterSetPlayKick::finished( const PlayerAgent * agent )finished57,1337
+IntentionWaitAfterSetPlayKick::execute( PlayerAgent * agent )execute83,1904
+
+intention_wait_after_set_play_kick.h,163
+#define INTENTION_WAIT_AFTER_SET_PLAY_KICK_HINTENTION_WAIT_AFTER_SET_PLAY_KICK_H28,866
+class IntentionWaitAfterSetPlayKickIntentionWaitAfterSetPlayKick35,1017
+
+keepaway.sh,22
+usage()usage62,1251
+
+keepaway_communication.cpp,383
+KeepawayCommunication::KeepawayCommunication()KeepawayCommunication58,1533
+KeepawayCommunication::~KeepawayCommunication()~KeepawayCommunication67,1667
+KeepawayCommunication::execute( PlayerAgent * agent )execute77,1807
+KeepawayCommunication::sayPlan( PlayerAgent * )sayPlan97,2174
+KeepawayCommunication::attentiontoSomeone( PlayerAgent * agent )attentiontoSomeone107,2331
+
+keepaway_communication.h,153
+#define KEEPAWAY_COMMUNICATION_HKEEPAWAY_COMMUNICATION_H33,956
+namespace rcsc {rcsc40,1071
+class KeepawayCommunicationKeepawayCommunication44,1109
+
+main_coach.cpp,119
+SampleCoach agent;agent43,1087
+sigExitHandle( int )sigExitHandle47,1184
+main( int argc, char **argv )main59,1396
+
+main_player.cpp,134
+SamplePlayer agent;agent43,1087
+void sig_exit_handle( int ){sig_exit_handle46,1180
+int main( int argc, char **argv){main56,1393
+
+main_trainer.cpp,126
+SampleTrainer agent;agent43,1089
+sig_exit_handle( int )sig_exit_handle47,1188
+main( int argc, char ** argv )main59,1409
+
+Makefile,10084
+pkgdatadir = $(datadir)/agent2dpkgdatadir21,689
+pkgincludedir = $(includedir)/agent2dpkgincludedir22,721
+pkglibdir = $(libdir)/agent2dpkglibdir23,759
+pkglibexecdir = $(libexecdir)/agent2dpkglibexecdir24,789
+am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cdam__cd25,827
+install_sh_DATA = $(install_sh) -c -m 644install_sh_DATA26,886
+install_sh_PROGRAM = $(install_sh) -cinstall_sh_PROGRAM27,928
+install_sh_SCRIPT = $(install_sh) -cinstall_sh_SCRIPT28,966
+INSTALL_HEADER = $(INSTALL_DATA)INSTALL_HEADER29,1003
+transform = $(program_transform_name)transform30,1036
+NORMAL_INSTALL = :NORMAL_INSTALL31,1074
+PRE_INSTALL = :PRE_INSTALL32,1093
+POST_INSTALL = :POST_INSTALL33,1109
+NORMAL_UNINSTALL = :NORMAL_UNINSTALL34,1126
+PRE_UNINSTALL = :PRE_UNINSTALL35,1147
+POST_UNINSTALL = :POST_UNINSTALL36,1165
+noinst_PROGRAMS = sample_player$(EXEEXT) sample_coach$(EXEEXT) \noinst_PROGRAMS37,1184
+subdir = srcsubdir39,1274
+DIST_COMMON = $(noinst_HEADERS) $(srcdir)/Makefile.am \DIST_COMMON40,1287
+ACLOCAL_M4 = $(top_srcdir)/aclocal.m4ACLOCAL_M443,1438
+am__aclocal_m4_deps = $(top_srcdir)/m4/ax_boost_base.m4 \am__aclocal_m4_deps44,1476
+am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \am__configure_deps46,1562
+mkinstalldirs = $(install_sh) -dmkinstalldirs48,1649
+CONFIG_HEADER = $(top_builddir)/config.hCONFIG_HEADER49,1682
+CONFIG_CLEAN_FILES = start.sh keepaway.sh train.shCONFIG_CLEAN_FILES50,1723
+CONFIG_CLEAN_VPATH_FILES =CONFIG_CLEAN_VPATH_FILES51,1774
+PROGRAMS = $(noinst_PROGRAMS)PROGRAMS52,1801
+am__objects_1 = sample_coach-sample_coach.$(OBJEXT) \am__objects_153,1831
+am_sample_coach_OBJECTS = $(am__objects_1)am_sample_coach_OBJECTS55,1920
+sample_coach_OBJECTS = $(am_sample_coach_OBJECTS)sample_coach_OBJECTS56,1963
+sample_coach_DEPENDENCIES =sample_coach_DEPENDENCIES57,2013
+sample_coach_LINK = $(CXXLD) $(sample_coach_CXXFLAGS) $(CXXFLAGS) \sample_coach_LINK58,2041
+am__objects_2 = sample_player-actgen_cross.$(OBJEXT) \am__objects_260,2151
+am__objects_3 = sample_player-bhv_basic_move.$(OBJEXT) \am__objects_391,3541
+am_sample_player_OBJECTS = $(am__objects_2) $(am__objects_3)am_sample_player_OBJECTS132,5485
+sample_player_OBJECTS = $(am_sample_player_OBJECTS)sample_player_OBJECTS133,5546
+sample_player_DEPENDENCIES =sample_player_DEPENDENCIES134,5598
+sample_player_LINK = $(CXXLD) $(sample_player_CXXFLAGS) $(CXXFLAGS) \sample_player_LINK135,5627
+am__objects_4 = sample_trainer-sample_trainer.$(OBJEXT) \am__objects_4137,5740
+am_sample_trainer_OBJECTS = $(am__objects_4)am_sample_trainer_OBJECTS139,5837
+sample_trainer_OBJECTS = $(am_sample_trainer_OBJECTS)sample_trainer_OBJECTS140,5882
+sample_trainer_DEPENDENCIES =sample_trainer_DEPENDENCIES141,5936
+sample_trainer_LINK = $(CXXLD) $(sample_trainer_CXXFLAGS) $(CXXFLAGS) \sample_trainer_LINK142,5966
+DEFAULT_INCLUDES = -I. -I$(top_builddir)DEFAULT_INCLUDES144,6082
+depcomp = $(SHELL) $(top_srcdir)/config/depcompdepcomp145,6123
+am__depfiles_maybe = depfilesam__depfiles_maybe146,6171
+am__mv = mv -fam__mv147,6201
+CXXCOMPILE = $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) \CXXCOMPILE148,6216
+CXXLD = $(CXX)CXXLD150,6333
+CXXLINK = $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) \CXXLINK151,6348
+COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \COMPILE153,6428
+CCLD = $(CC)CCLD155,6537
+LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@LINK156,6550
+SOURCES = $(sample_coach_SOURCES) $(sample_player_SOURCES) \SOURCES157,6619
+DIST_SOURCES = $(sample_coach_SOURCES) $(sample_player_SOURCES) \DIST_SOURCES159,6707
+DATA = $(noinst_DATA)DATA161,6800
+HEADERS = $(noinst_HEADERS)HEADERS162,6822
+ETAGS = etagsETAGS163,6850
+CTAGS = ctagsCTAGS164,6864
+DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)DISTFILES165,6878
+ACLOCAL = ${SHELL} /Users/itodakota/jugyou/all/robo/agent2d-3.1.1/config/missing --run aclocal-1.11ACLOCAL166,6947
+AMTAR = ${SHELL} /Users/itodakota/jugyou/all/robo/agent2d-3.1.1/config/missing --run tarAMTAR167,7047
+AUTOCONF = ${SHELL} /Users/itodakota/jugyou/all/robo/agent2d-3.1.1/config/missing --run autoconfAUTOCONF168,7136
+AUTOHEADER = ${SHELL} /Users/itodakota/jugyou/all/robo/agent2d-3.1.1/config/missing --run autoheaderAUTOHEADER169,7233
+AUTOMAKE = ${SHELL} /Users/itodakota/jugyou/all/robo/agent2d-3.1.1/config/missing --run automake-1.11AUTOMAKE170,7334
+AWK = awkAWK171,7436
+BOOST_CPPFLAGS = -I/usr/local/includeBOOST_CPPFLAGS172,7446
+BOOST_LDFLAGS = -L/usr/local/libBOOST_LDFLAGS173,7484
+CC = gccCC174,7517
+CCDEPMODE = depmode=gcc3CCDEPMODE175,7526
+CFLAGS = -g -O2CFLAGS176,7551
+CPPFLAGS =  -I/usr/local/includeCPPFLAGS177,7567
+CXX = g++CXX178,7600
+CXXCPP = g++ -ECXXCPP179,7610
+CXXDEPMODE = depmode=gcc3CXXDEPMODE180,7626
+CXXFLAGS = -g -O2CXXFLAGS181,7652
+CYGPATH_W = echoCYGPATH_W182,7670
+DEFS = -DHAVE_CONFIG_HDEFS183,7687
+DEPDIR = .depsDEPDIR184,7710
+ECHO_C = \cECHO_C185,7725
+ECHO_N = ECHO_N186,7737
+ECHO_T = ECHO_T187,7747
+EGREP = /usr/bin/grep -EEGREP188,7757
+EXEEXT = EXEEXT189,7782
+GREP = /usr/bin/grepGREP190,7792
+INSTALL = /usr/bin/install -cINSTALL191,7813
+INSTALL_DATA = ${INSTALL} -m 644INSTALL_DATA192,7843
+INSTALL_PROGRAM = ${INSTALL}INSTALL_PROGRAM193,7876
+INSTALL_SCRIPT = ${INSTALL}INSTALL_SCRIPT194,7905
+INSTALL_STRIP_PROGRAM = $(install_sh) -c -sINSTALL_STRIP_PROGRAM195,7933
+LDFLAGS =  -L/usr/local/libLDFLAGS196,7977
+LIBOBJS = LIBOBJS197,8005
+LIBRCSCLIB = /usr/local/libLIBRCSCLIB198,8016
+LIBS = -lrcsc_agent -lrcsc_ann -lrcsc_net -lrcsc_time -lrcsc_param -lrcsc_gz -lrcsc_rcg -lrcsc_geom -lz -lm LIBS199,8044
+LN_S = ln -sLN_S200,8153
+LTLIBOBJS = LTLIBOBJS201,8166
+MAKEINFO = ${SHELL} /Users/itodakota/jugyou/all/robo/agent2d-3.1.1/config/missing --run makeinfoMAKEINFO202,8179
+MKDIR_P = ../config/install-sh -c -dMKDIR_P203,8276
+OBJEXT = oOBJEXT204,8313
+PACKAGE = agent2dPACKAGE205,8324
+PACKAGE_BUGREPORT = akky@users.sourceforge.jpPACKAGE_BUGREPORT206,8342
+PACKAGE_NAME = agent2dPACKAGE_NAME207,8388
+PACKAGE_STRING = agent2d 3.1.1PACKAGE_STRING208,8411
+PACKAGE_TARNAME = agent2dPACKAGE_TARNAME209,8442
+PACKAGE_URL = PACKAGE_URL210,8468
+PACKAGE_VERSION = 3.1.1PACKAGE_VERSION211,8483
+PATH_SEPARATOR = :PATH_SEPARATOR212,8507
+RANLIB = ranlibRANLIB213,8526
+SET_MAKE = SET_MAKE214,8542
+SHELL = /bin/shSHELL215,8554
+STRIP = STRIP216,8570
+VERSION = 3.1.1VERSION217,8579
+abs_builddir = /Users/itodakota/jugyou/all/robo/agent2d-3.1.1/srcabs_builddir218,8595
+abs_srcdir = /Users/itodakota/jugyou/all/robo/agent2d-3.1.1/srcabs_srcdir219,8661
+abs_top_builddir = /Users/itodakota/jugyou/all/robo/agent2d-3.1.1abs_top_builddir220,8725
+abs_top_srcdir = /Users/itodakota/jugyou/all/robo/agent2d-3.1.1abs_top_srcdir221,8791
+ac_ct_CC = gccac_ct_CC222,8855
+ac_ct_CXX = g++ac_ct_CXX223,8870
+am__include = includeam__include224,8886
+am__leading_dot = .am__leading_dot225,8908
+am__quote = am__quote226,8928
+am__tar = ${AMTAR} chof - "$$tardir"am__tar227,8941
+am__untar = ${AMTAR} xf -am__untar228,8978
+bindir = ${exec_prefix}/binbindir229,9004
+build_alias = build_alias230,9032
+builddir = .builddir231,9047
+datadir = ${datarootdir}datadir232,9060
+datarootdir = ${prefix}/sharedatarootdir233,9085
+docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}docdir234,9115
+dvidir = ${docdir}dvidir235,9162
+exec_prefix = ${prefix}exec_prefix236,9181
+host_alias = host_alias237,9205
+htmldir = ${docdir}htmldir238,9219
+includedir = ${prefix}/includeincludedir239,9239
+infodir = ${datarootdir}/infoinfodir240,9270
+install_sh = ${SHELL} /Users/itodakota/jugyou/all/robo/agent2d-3.1.1/config/install-shinstall_sh241,9300
+libdir = ${exec_prefix}/liblibdir242,9387
+libexecdir = ${exec_prefix}/libexeclibexecdir243,9415
+localedir = ${datarootdir}/localelocaledir244,9451
+localstatedir = ${prefix}/varlocalstatedir245,9485
+mandir = ${datarootdir}/manmandir246,9515
+mkdir_p = $(top_builddir)/config/install-sh -c -dmkdir_p247,9543
+oldincludedir = /usr/includeoldincludedir248,9593
+pdfdir = ${docdir}pdfdir249,9622
+prefix = /usr/localprefix250,9641
+program_transform_name = s,x,x,program_transform_name251,9661
+psdir = ${docdir}psdir252,9693
+sbindir = ${exec_prefix}/sbinsbindir253,9711
+sharedstatedir = ${prefix}/comsharedstatedir254,9741
+srcdir = .srcdir255,9772
+sysconfdir = ${prefix}/etcsysconfdir256,9783
+target_alias = target_alias257,9810
+top_build_prefix = ../top_build_prefix258,9826
+top_builddir = ..top_builddir259,9849
+top_srcdir = ..top_srcdir260,9867
+PLAYERSOURCES = \PLAYERSOURCES261,9883
+PLAYERHEADERS = \PLAYERHEADERS304,11011
+CHAINACTIONSOURCES = \CHAINACTIONSOURCES347,12059
+COACHSOURCES = \COACHSOURCES418,14605
+COACHHEADERS = \COACHHEADERS422,14659
+TRAINERSOURCES = \TRAINERSOURCES425,14693
+TRAINERHEADERS = \TRAINERHEADERS429,14753
+noinst_DATA = \noinst_DATA432,14791
+sample_player_SOURCES = \sample_player_SOURCES482,16753
+sample_player_CXXFLAGS = -W -Wallsample_player_CXXFLAGS486,16823
+sample_player_LDFLAGS = sample_player_LDFLAGS487,16857
+sample_player_LDADD = sample_player_LDADD488,16882
+sample_coach_SOURCES = \sample_coach_SOURCES489,16905
+sample_coach_CXXFLAGS = -W -Wallsample_coach_CXXFLAGS492,16948
+sample_coach_LDFLAGS = sample_coach_LDFLAGS493,16981
+sample_coach_LDADD = sample_coach_LDADD494,17005
+sample_trainer_SOURCES = \sample_trainer_SOURCES495,17027
+sample_trainer_CXXFLAGS = -W -Wallsample_trainer_CXXFLAGS498,17074
+sample_trainer_LDFLAGS = sample_trainer_LDFLAGS499,17109
+sample_trainer_LDADD = sample_trainer_LDADD500,17135
+noinst_HEADERS = \noinst_HEADERS501,17159
+AM_CPPFLAGS = -I$(top_srcdir)/src  -I$(top_srcdir)/src/chain_actionAM_CPPFLAGS506,17237
+AM_CFLAGS = -W -WallAM_CFLAGS507,17305
+AM_CXXFLAGS = -W -WallAM_CXXFLAGS508,17326
+AM_LDLAGS = AM_LDLAGS509,17349
+CLEANFILES = core *~CLEANFILES510,17362
+DISTCLEANFILES = start.sh train.shDISTCLEANFILES511,17383
+EXTRA_DIST = $(noinst_DATA) \EXTRA_DIST512,17418
+
+neck_default_intercept_neck.cpp,314
+Neck_DefaultInterceptNeck::~Neck_DefaultInterceptNeck()~Neck_DefaultInterceptNeck60,1643
+Neck_DefaultInterceptNeck::execute( PlayerAgent * agent )execute80,2070
+Neck_DefaultInterceptNeck::doTurnToReceiver( PlayerAgent * agent )doTurnToReceiver116,2911
+Neck_DefaultInterceptNeck::clone() constclone204,5651
+
+neck_default_intercept_neck.h,743
+#define NECK_DEFAULT_INTERCEPT_NECK_HNECK_DEFAULT_INTERCEPT_NECK_H33,979
+namespace rcsc {rcsc38,1091
+class Neck_DefaultInterceptNeckNeck_DefaultInterceptNeck49,1272
+    const ActionChainGraph & M_chain_graph;M_chain_graph52,1345
+    rcsc::ViewAction * M_default_view_act;M_default_view_act54,1390
+    rcsc::NeckAction * M_default_neck_act;M_default_neck_act55,1433
+    Neck_DefaultInterceptNeck( const ActionChainGraph & chain_graph,Neck_DefaultInterceptNeck63,1540
+    Neck_DefaultInterceptNeck( rcsc::ViewAction * view = static_cast< rcsc::ViewAction * >( 0 ),Neck_DefaultInterceptNeck72,1943
+    Neck_DefaultInterceptNeck( rcsc::NeckAction * neck = static_cast< rcsc::NeckAction * >( 0 ) )Neck_DefaultInterceptNeck80,2296
+
+neck_goalie_turn_neck.cpp,68
+Neck_GoalieTurnNeck::execute( PlayerAgent * agent )execute47,1168
+
+neck_goalie_turn_neck.h,181
+#define TOKYOTECH_NECk_GOALIE_TURN_NECK_HTOKYOTECH_NECk_GOALIE_TURN_NECK_H28,863
+class Neck_GoalieTurnNeckNeck_GoalieTurnNeck33,947
+    NeckAction * clone() constclone42,1073
+
+neck_offensive_intercept_neck.cpp,183
+Neck_OffensiveInterceptNeck::execute( PlayerAgent * agent )execute64,1779
+Neck_OffensiveInterceptNeck::doTurnNeckToShootPoint( PlayerAgent * agent )doTurnNeckToShootPoint277,8525
+
+neck_offensive_intercept_neck.h,300
+#define NECK_OFFENSIVE_INTERCEPT_NECK_HNECK_OFFENSIVE_INTERCEPT_NECK_H33,967
+namespace rcsc {rcsc37,1048
+class Neck_OffensiveInterceptNeckNeck_OffensiveInterceptNeck46,1207
+    Neck_OffensiveInterceptNeck()Neck_OffensiveInterceptNeck52,1322
+    rcsc::NeckAction * clone() constclone66,1684
+
+role_center_back.cpp,279
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleCenterBack::create,role51,1281
+RoleCenterBack::execute( PlayerAgent * agent )execute60,1529
+RoleCenterBack::doKick( PlayerAgent * agent )doKick87,2052
+RoleCenterBack::doMove( PlayerAgent * agent )doMove105,2468
+
+role_center_back.h,316
+#define ROLE_CENTER_BACK_HROLE_CENTER_BACK_H28,848
+class RoleCenterBackRoleCenterBack34,936
+    static const std::string NAME;NAME40,1002
+    RoleCenterBack()RoleCenterBack42,1038
+    ~RoleCenterBack()~RoleCenterBack45,1070
+    std::string & name()name54,1185
+    SoccerRole::Ptr create()create60,1261
+
+role_center_forward.cpp,291
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleCenterForward::create,role52,1291
+RoleCenterForward::execute( PlayerAgent * agent )execute61,1545
+RoleCenterForward::doKick( PlayerAgent * agent )doKick88,2071
+RoleCenterForward::doMove( PlayerAgent * agent )doMove106,2490
+
+role_center_forward.h,339
+#define ROLE_CENTER_FORWARD_HROLE_CENTER_FORWARD_H28,851
+class RoleCenterForwardRoleCenterForward32,908
+    static const std::string NAME;NAME38,977
+    RoleCenterForward()RoleCenterForward40,1013
+    ~RoleCenterForward()~RoleCenterForward43,1048
+    std::string & name()name52,1166
+    SoccerRole::Ptr create()create58,1242
+
+role_defensive_half.cpp,291
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleDefensiveHalf::create,role51,1290
+RoleDefensiveHalf::execute( PlayerAgent * agent )execute60,1544
+RoleDefensiveHalf::doKick( PlayerAgent * agent )doKick87,2070
+RoleDefensiveHalf::doMove( PlayerAgent * agent )doMove105,2489
+
+role_defensive_half.h,339
+#define ROLE_DEFENSIVE_HALF_HROLE_DEFENSIVE_HALF_H28,851
+class RoleDefensiveHalfRoleDefensiveHalf32,908
+    static const std::string NAME;NAME38,977
+    RoleDefensiveHalf()RoleDefensiveHalf40,1013
+    ~RoleDefensiveHalf()~RoleDefensiveHalf43,1048
+    std::string & name()name52,1166
+    SoccerRole::Ptr create()create58,1242
+
+role_goalie.cpp,264
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleGoalie::create,role58,1504
+RoleGoalie::execute( PlayerAgent * agent )execute67,1746
+RoleGoalie::doKick( PlayerAgent * agent )doKick107,3111
+RoleGoalie::doMove( PlayerAgent * agent )doMove118,3333
+
+role_goalie.h,297
+#define AGENT2D_ROLE_GOALIE_HAGENT2D_ROLE_GOALIE_H28,851
+class RoleGoalieRoleGoalie34,937
+    static const std::string NAME;NAME40,999
+    RoleGoalie()RoleGoalie42,1035
+    ~RoleGoalie()~RoleGoalie45,1063
+    std::string & name()name56,1239
+    SoccerRole::Ptr create()create62,1315
+
+role_keepaway_keeper.cpp,295
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleKeepawayKeeper::create,role59,1510
+RoleKeepawayKeeper::execute( PlayerAgent * agent )execute68,1766
+RoleKeepawayKeeper::doKick( PlayerAgent * agent )doKick97,2295
+RoleKeepawayKeeper::doMove( PlayerAgent * agent )doMove112,2651
+
+role_keepaway_keeper.h,347
+#define ROLE_KEEPAWAY_KEEPER_HROLE_KEEPAWAY_KEEPER_H28,852
+class RoleKeepawayKeeperRoleKeepawayKeeper32,910
+    static const std::string NAME;NAME38,980
+    RoleKeepawayKeeper()RoleKeepawayKeeper40,1016
+    ~RoleKeepawayKeeper()~RoleKeepawayKeeper43,1052
+    std::string & name()name51,1170
+    SoccerRole::Ptr create()create57,1246
+
+role_keepaway_taker.cpp,290
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleKeepawayTaker::create,role54,1364
+RoleKeepawayTaker::execute( PlayerAgent * agent )execute63,1618
+RoleKeepawayTaker::doKick( PlayerAgent * agent )doKick87,2033
+RoleKeepawayTaker::doMove( PlayerAgent * agent )doMove98,2262
+
+role_keepaway_taker.h,353
+#define HELIOS_ROLE_KEEPAWAY_TAKER_HHELIOS_ROLE_KEEPAWAY_TAKER_H28,858
+class RoleKeepawayTakerRoleKeepawayTaker32,922
+    static const std::string NAME;NAME38,991
+    RoleKeepawayTaker()RoleKeepawayTaker40,1027
+    ~RoleKeepawayTaker()~RoleKeepawayTaker43,1062
+    std::string & name()name51,1179
+    SoccerRole::Ptr create()create57,1255
+
+role_offensive_half.cpp,291
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleOffensiveHalf::create,role51,1290
+RoleOffensiveHalf::execute( PlayerAgent * agent )execute60,1544
+RoleOffensiveHalf::doKick( PlayerAgent * agent )doKick87,2070
+RoleOffensiveHalf::doMove( PlayerAgent * agent )doMove105,2489
+
+role_offensive_half.h,339
+#define ROLE_OFFENSIVE_HALF_HROLE_OFFENSIVE_HALF_H28,851
+class RoleOffensiveHalfRoleOffensiveHalf32,908
+    static const std::string NAME;NAME38,977
+    RoleOffensiveHalf()RoleOffensiveHalf40,1013
+    ~RoleOffensiveHalf()~RoleOffensiveHalf43,1048
+    std::string & name()name52,1166
+    SoccerRole::Ptr create()create58,1242
+
+role_sample.cpp,263
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleSample::create,role56,1379
+RoleSample::execute( PlayerAgent * agent )execute65,1618
+RoleSample::doKick( PlayerAgent * agent )doKick92,2136
+RoleSample::doMove( PlayerAgent * agent )doMove115,2727
+
+role_sample.h,297
+#define AGENT2D_ROLE_SAMPLE_HAGENT2D_ROLE_SAMPLE_H28,851
+class RoleSampleRoleSample32,908
+    static const std::string NAME;NAME38,970
+    RoleSample()RoleSample40,1006
+    ~RoleSample()~RoleSample43,1034
+    std::string & name()name52,1145
+    SoccerRole::Ptr create()create58,1221
+
+role_side_back.cpp,271
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleSideBack::create,role51,1275
+RoleSideBack::execute( PlayerAgent * agent )execute60,1518
+RoleSideBack::doKick( PlayerAgent * agent )doKick87,2038
+RoleSideBack::doMove( PlayerAgent * agent )doMove105,2451
+
+role_side_back.h,298
+#define ROLE_SIDE_BACK_HROLE_SIDE_BACK_H28,846
+class RoleSideBackRoleSideBack32,898
+    static const std::string NAME;NAME38,962
+    RoleSideBack()RoleSideBack40,998
+    ~RoleSideBack()~RoleSideBack43,1028
+    std::string & name()name52,1141
+    SoccerRole::Ptr create()create58,1217
+
+role_side_forward.cpp,283
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleSideForward::create,role51,1284
+RoleSideForward::execute( PlayerAgent * agent )execute60,1534
+RoleSideForward::doKick( PlayerAgent * agent )doKick87,2058
+RoleSideForward::doMove( PlayerAgent * agent )doMove105,2475
+
+role_side_forward.h,323
+#define ROLE_SIDE_FORWARD_HROLE_SIDE_FORWARD_H28,849
+class RoleSideForwardRoleSideForward32,904
+    static const std::string NAME;NAME38,971
+    RoleSideForward()RoleSideForward40,1007
+    ~RoleSideForward()~RoleSideForward43,1040
+    std::string & name()name51,1155
+    SoccerRole::Ptr create()create57,1231
+
+role_side_half.cpp,271
+rcss::RegHolder role = SoccerRole::creators().autoReg( &RoleSideHalf::create,role53,1354
+RoleSideHalf::execute( PlayerAgent * agent )execute62,1598
+RoleSideHalf::doKick( PlayerAgent * agent )doKick89,2119
+RoleSideHalf::doMove( PlayerAgent * agent )doMove107,2533
+
+role_side_half.h,298
+#define ROLE_SIDE_HALF_HROLE_SIDE_HALF_H28,846
+class RoleSideHalfRoleSideHalf32,898
+    static const std::string NAME;NAME38,962
+    RoleSideHalf()RoleSideHalf40,998
+    ~RoleSideHalf()~RoleSideHalf43,1028
+    std::string & name()name51,1140
+    SoccerRole::Ptr create()create57,1216
+
+sample_coach.cpp,961
+struct RealSpeedMaxCmpRealSpeedMaxCmp60,1568
+    result_type operator()( first_argument_type lhs,operator ()65,1746
+SampleCoach::SampleCoach()SampleCoach82,2208
+SampleCoach::~SampleCoach()~SampleCoach139,5455
+SampleCoach::initImpl( CmdLineParser & cmd_parser )initImpl149,5575
+SampleCoach::actionImpl()actionImpl199,6680
+SampleCoach::handleServerParam()handleServerParam219,7096
+SampleCoach::handlePlayerParam()handlePlayerParam229,7220
+SampleCoach::handlePlayerType()handlePlayerType239,7344
+SampleCoach::doSubstitute()doSubstitute249,7467
+SampleCoach::doFirstSubstitute()doFirstSubstitute278,8055
+SampleCoach::doSubstituteTiredPlayers()doSubstituteTiredPlayers429,12622
+SampleCoach::substituteTo( const int unum,substituteTo532,15221
+SampleCoach::getFastestType( PlayerTypePtrCont & candidates )getFastestType573,16488
+SampleCoach::sayPlayerTypes()sayPlayerTypes640,18190
+SampleCoach::sendTeamGraphic()sendTeamGraphic714,19622
+
+sample_coach.h,338
+#define SAMPLE_COACH_HSAMPLE_COACH_H28,844
+namespace rcsc {rcsc36,949
+class SampleCoachSampleCoach41,988
+    typedef std::vector< const rcsc::PlayerType * > PlayerTypePtrCont;PlayerTypePtrCont44,1047
+    int M_opponent_player_types[11];M_opponent_player_types47,1120
+    rcsc::TeamGraphic M_team_graphic;M_team_graphic49,1158
+
+sample_communication.cpp,3132
+struct ObjectScore {ObjectScore61,1529
+    const AbstractPlayerObject * player_;player_62,1550
+    int number_;number_63,1592
+    double score_;score_64,1609
+    ObjectScore()ObjectScore66,1629
+    struct Compare {Compare72,1777
+        bool operator()( const ObjectScore & lhs,operator ()73,1798
+    struct IllegalChecker {IllegalChecker80,1983
+        bool operator()( const ObjectScore & val ) constoperator ()81,2011
+struct AbstractPlayerSelfDistCmp {AbstractPlayerSelfDistCmp89,2144
+    bool operator()( const AbstractPlayerObject * lhs,operator ()90,2179
+struct AbstractPlayerBallDistCmp {AbstractPlayerBallDistCmp97,2376
+    bool operator()( const AbstractPlayerObject * lhs,operator ()98,2411
+struct AbstractPlayerBallXDiffCmp {AbstractPlayerBallXDiffCmp106,2609
+    const double ball_x_;ball_x_110,2696
+    AbstractPlayerBallXDiffCmp( const double & ball_x )AbstractPlayerBallXDiffCmp111,2722
+    bool operator()( const AbstractPlayerObject * lhs,operator ()115,2817
+struct AbstractPlayerXCmp {AbstractPlayerXCmp123,3060
+    bool operator()( const AbstractPlayerObject * lhs,operator ()124,3088
+distance_rate( const double & val,distance_rate133,3285
+distance_from_ball( const AbstractPlayerObject * p,distance_from_ball142,3462
+SampleCommunication::SampleCommunication()SampleCommunication158,3938
+SampleCommunication::~SampleCommunication()~SampleCommunication175,4329
+SampleCommunication::execute( PlayerAgent * agent )execute185,4465
+SampleCommunication::updateCurrentSender( const PlayerAgent * agent )updateCurrentSender248,6247
+SampleCommunication::updatePlayerSendTime( const WorldModel & wm,updatePlayerSendTime330,8481
+SampleCommunication::shouldSayBall( const PlayerAgent * agent )shouldSayBall357,9121
+SampleCommunication::shouldSayOpponentGoalie( const PlayerAgent * agent )shouldSayOpponentGoalie524,14405
+SampleCommunication::goalieSaySituation( const rcsc::PlayerAgent * agent )goalieSaySituation561,15315
+SampleCommunication::sayBallAndPlayers( PlayerAgent * agent )sayBallAndPlayers596,15984
+SampleCommunication::sayBall( PlayerAgent * agent )sayBall1117,35206
+SampleCommunication::sayGoalie( PlayerAgent * agent )sayGoalie1320,42232
+SampleCommunication::sayIntercept( PlayerAgent * agent )sayIntercept1362,43640
+SampleCommunication::sayOffsideLine( PlayerAgent * agent )sayOffsideLine1423,45261
+SampleCommunication::sayDefenseLine( PlayerAgent * agent )sayDefenseLine1488,46819
+SampleCommunication::sayPlayers( PlayerAgent * agent )sayPlayers1535,48034
+SampleCommunication::sayOpponents( PlayerAgent * agent )sayOpponents1807,58295
+SampleCommunication::sayTwoOpponents( PlayerAgent * agent )sayTwoOpponents1865,60027
+SampleCommunication::sayThreeOpponents( PlayerAgent * agent )sayThreeOpponents1922,61835
+SampleCommunication::saySelf( PlayerAgent * agent )saySelf1983,63990
+SampleCommunication::sayStamina( PlayerAgent * agent )sayStamina2093,67358
+SampleCommunication::sayRecovery( PlayerAgent * agent )sayRecovery2119,67997
+SampleCommunication::attentiontoSomeone( PlayerAgent * agent )attentiontoSomeone2140,68578
+
+sample_communication.h,650
+#define SAMPLE_COMMUNICATION_HSAMPLE_COMMUNICATION_H33,941
+namespace rcsc {rcsc40,1054
+class SampleCommunicationSampleCommunication44,1092
+    int M_current_sender_unum;M_current_sender_unum48,1157
+    int M_next_sender_unum;M_next_sender_unum49,1188
+    rcsc::GameTime M_ball_send_time;M_ball_send_time50,1216
+    rcsc::GameTime M_teammate_send_time[12];M_teammate_send_time51,1253
+    rcsc::GameTime M_opponent_send_time[12];M_opponent_send_time52,1298
+    int currentSenderUnum() const { return M_current_sender_unum; }currentSenderUnum62,1469
+    int nextSenderUnum() const { return M_next_sender_unum; }nextSenderUnum64,1538
+
+sample_field_evaluator.cpp,377
+static const int VALID_PLAYER_THRESHOLD = 8;VALID_PLAYER_THRESHOLD48,1161
+SampleFieldEvaluator::SampleFieldEvaluator()SampleFieldEvaluator62,1432
+SampleFieldEvaluator::~SampleFieldEvaluator()~SampleFieldEvaluator71,1564
+SampleFieldEvaluator::operator()( const PredictState & state,operator ()81,1704
+evaluate_state( const PredictState & state )evaluate_state102,2115
+
+sample_field_evaluator.h,150
+#define SAMPLE_FIELD_EVALUATOR_HSAMPLE_FIELD_EVALUATOR_H28,852
+namespace rcsc {rcsc35,962
+class SampleFieldEvaluatorSampleFieldEvaluator42,1050
+
+sample_player.cpp,1011
+SamplePlayer::SamplePlayer()SamplePlayer94,2495
+SamplePlayer::~SamplePlayer()~SamplePlayer158,6121
+SamplePlayer::initImpl( CmdLineParser & cmd_parser )initImpl168,6243
+SamplePlayer::actionImpl()actionImpl224,7611
+SamplePlayer::handleActionStart()handleActionStart320,9784
+SamplePlayer::handleActionEnd()handleActionEnd330,9910
+SamplePlayer::handleServerParam()handleServerParam453,15111
+SamplePlayer::handlePlayerParam()handlePlayerParam484,15911
+SamplePlayer::handlePlayerType()handlePlayerType494,16037
+SamplePlayer::communicationImpl()communicationImpl505,16218
+SamplePlayer::doPreprocess()doPreprocess517,16422
+SamplePlayer::doShoot()doShoot634,19141
+SamplePlayer::doForceKick()doForceKick659,19710
+SamplePlayer::doHeardPassReceive()doHeardPassReceive695,20746
+SamplePlayer::getFieldEvaluator() constgetFieldEvaluator758,22942
+SamplePlayer::createFieldEvaluator() constcreateFieldEvaluator768,23122
+SamplePlayer::createActionGenerator() constcreateActionGenerator787,23610
+
+sample_player.h,302
+#define SAMPLE_PLAYER_HSAMPLE_PLAYER_H28,845
+class SamplePlayerSamplePlayer37,1014
+    Communication::Ptr M_communication;M_communication41,1076
+    FieldEvaluator::ConstPtr M_field_evaluator;M_field_evaluator43,1117
+    ActionGenerator::ConstPtr M_action_generator;M_action_generator44,1165
+
+sample_trainer.cpp,435
+SampleTrainer::SampleTrainer()SampleTrainer50,1380
+SampleTrainer::~SampleTrainer()~SampleTrainer60,1519
+SampleTrainer::initImpl( CmdLineParser & cmd_parser )initImpl70,1643
+SampleTrainer::actionImpl()actionImpl109,2444
+SampleTrainer::sampleAction()sampleAction131,2842
+SampleTrainer::recoverForever()recoverForever214,5276
+SampleTrainer::doSubstitute()doSubstitute234,5615
+SampleTrainer::doKeepaway()doKeepaway271,6638
+
+sample_trainer.h,90
+#define SAMPLE_TRAINER_HSAMPLE_TRAINER_H28,846
+class SampleTrainerSampleTrainer32,913
+
+soccer_role.cpp,185
+SoccerRole::creators()creators57,1477
+SoccerRole::create( const std::string & name )create68,1656
+SoccerRole::acceptExecution( const rcsc::WorldModel & wm )acceptExecution97,2783
+
+soccer_role.h,369
+#define SOCCER_ROLE_HSOCCER_ROLE_H33,933
+namespace rcsc {rcsc39,1033
+class SoccerRole {SoccerRole47,1127
+    typedef boost::shared_ptr< SoccerRole > Ptr;Ptr50,1155
+    typedef Ptr (*Creator)();Creator51,1204
+    typedef rcss::Factory< Creator, std::string > Creators;Creators52,1234
+    SoccerRole()SoccerRole66,1515
+    ~SoccerRole()~SoccerRole72,1582
+
+start-debug.sh,0
+
+start-offline.sh,0
+
+start.sh,22
+usage()usage56,1087
+
+strategy.cpp,2825
+const std::string Strategy::BEFORE_KICK_OFF_CONF = "before-kick-off.conf";BEFORE_KICK_OFF_CONF76,1790
+const std::string Strategy::NORMAL_FORMATION_CONF = "normal-formation.conf";NORMAL_FORMATION_CONF77,1865
+const std::string Strategy::DEFENSE_FORMATION_CONF = "defense-formation.conf";DEFENSE_FORMATION_CONF78,1942
+const std::string Strategy::OFFENSE_FORMATION_CONF = "offense-formation.conf";OFFENSE_FORMATION_CONF79,2021
+const std::string Strategy::GOAL_KICK_OPP_FORMATION_CONF = "goal-kick-opp.conf";GOAL_KICK_OPP_FORMATION_CONF80,2100
+const std::string Strategy::GOAL_KICK_OUR_FORMATION_CONF = "goal-kick-our.conf";GOAL_KICK_OUR_FORMATION_CONF81,2181
+const std::string Strategy::GOALIE_CATCH_OPP_FORMATION_CONF = "goalie-catch-opp.conf";GOALIE_CATCH_OPP_FORMATION_CONF82,2262
+const std::string Strategy::GOALIE_CATCH_OUR_FORMATION_CONF = "goalie-catch-our.conf";GOALIE_CATCH_OUR_FORMATION_CONF83,2349
+const std::string Strategy::KICKIN_OUR_FORMATION_CONF = "kickin-our-formation.conf";KICKIN_OUR_FORMATION_CONF84,2436
+const std::string Strategy::SETPLAY_OPP_FORMATION_CONF = "setplay-opp-formation.conf";SETPLAY_OPP_FORMATION_CONF85,2521
+const std::string Strategy::SETPLAY_OUR_FORMATION_CONF = "setplay-our-formation.conf";SETPLAY_OUR_FORMATION_CONF86,2608
+const std::string Strategy::INDIRECT_FREEKICK_OPP_FORMATION_CONF = "indirect-freekick-opp-formation.conf";INDIRECT_FREEKICK_OPP_FORMATION_CONF87,2695
+const std::string Strategy::INDIRECT_FREEKICK_OUR_FORMATION_CONF = "indirect-freekick-our-formation.conf";INDIRECT_FREEKICK_OUR_FORMATION_CONF88,2802
+Strategy::Strategy()Strategy95,2992
+Strategy::instance()instance141,4439
+Strategy::init( CmdLineParser & cmd_parser )init152,4606
+Strategy::read( const std::string & formation_dir )read184,5119
+Strategy::readFormation( const std::string & filepath )readFormation301,8603
+Strategy::createFormation( const std::string & type_name ) constcreateFormation400,11298
+Strategy::update( const WorldModel & wm )update435,12161
+Strategy::exchangeRole( const int unum0,exchangeRole454,12490
+Strategy::isMarkerType( const int unum ) constisMarkerType499,13829
+Strategy::createRole( const int unum,createRole519,14163
+Strategy::updateSituation( const WorldModel & wm )updateSituation570,15488
+Strategy::updatePosition( const WorldModel & wm )updatePosition627,17128
+Strategy::getPositionType( const int unum ) constgetPositionType730,20180
+Strategy::getPosition( const int unum ) constgetPosition760,20872
+Strategy::getFormation( const WorldModel & wm ) constgetFormation790,21573
+Strategy::get_ball_area( const WorldModel & wm )get_ball_area957,25597
+Strategy::get_ball_area( const Vector2D & ball_pos )get_ball_area972,26085
+Strategy::get_normal_dash_power( const WorldModel & wm )get_normal_dash_power1131,31523
+
+strategy.h,4647
+#define STRATEGY_HSTRATEGY_H33,910
+namespace rcsc {rcsc47,1147
+enum PositionType {PositionType52,1206
+    Position_Left = -1,Position_Left53,1226
+    Position_Center = 0,Position_Center54,1250
+    Position_Right = 1,Position_Right55,1275
+enum SituationType {SituationType58,1303
+    Normal_Situation,Normal_Situation59,1324
+    Offense_Situation,Offense_Situation60,1346
+    Defense_Situation,Defense_Situation61,1369
+    OurSetPlay_Situation,OurSetPlay_Situation62,1392
+    OppSetPlay_Situation,OppSetPlay_Situation63,1418
+    PenaltyKick_Situation,PenaltyKick_Situation64,1444
+class Strategy {Strategy68,1476
+    static const std::string BEFORE_KICK_OFF_CONF;BEFORE_KICK_OFF_CONF70,1501
+    static const std::string NORMAL_FORMATION_CONF;NORMAL_FORMATION_CONF71,1552
+    static const std::string DEFENSE_FORMATION_CONF;DEFENSE_FORMATION_CONF72,1604
+    static const std::string OFFENSE_FORMATION_CONF;OFFENSE_FORMATION_CONF73,1657
+    static const std::string GOAL_KICK_OPP_FORMATION_CONF;GOAL_KICK_OPP_FORMATION_CONF74,1710
+    static const std::string GOAL_KICK_OUR_FORMATION_CONF;GOAL_KICK_OUR_FORMATION_CONF75,1769
+    static const std::string GOALIE_CATCH_OPP_FORMATION_CONF;GOALIE_CATCH_OPP_FORMATION_CONF76,1828
+    static const std::string GOALIE_CATCH_OUR_FORMATION_CONF;GOALIE_CATCH_OUR_FORMATION_CONF77,1890
+    static const std::string KICKIN_OUR_FORMATION_CONF;KICKIN_OUR_FORMATION_CONF78,1952
+    static const std::string SETPLAY_OPP_FORMATION_CONF;SETPLAY_OPP_FORMATION_CONF79,2008
+    static const std::string SETPLAY_OUR_FORMATION_CONF;SETPLAY_OUR_FORMATION_CONF80,2065
+    static const std::string INDIRECT_FREEKICK_OPP_FORMATION_CONF;INDIRECT_FREEKICK_OPP_FORMATION_CONF81,2122
+    static const std::string INDIRECT_FREEKICK_OUR_FORMATION_CONF;INDIRECT_FREEKICK_OUR_FORMATION_CONF82,2189
+    enum BallArea {BallArea84,2257
+        BA_CrossBlock, BA_DribbleBlock, BA_DribbleAttack, BA_Cross,BA_CrossBlock85,2277
+        BA_CrossBlock, BA_DribbleBlock, BA_DribbleAttack, BA_Cross,BA_DribbleBlock85,2277
+        BA_CrossBlock, BA_DribbleBlock, BA_DribbleAttack, BA_Cross,BA_DribbleAttack85,2277
+        BA_CrossBlock, BA_DribbleBlock, BA_DribbleAttack, BA_Cross,BA_Cross85,2277
+        BA_Stopper,    BA_DefMidField,  BA_OffMidField,   BA_ShootChance,BA_Stopper86,2345
+        BA_Stopper,    BA_DefMidField,  BA_OffMidField,   BA_ShootChance,BA_DefMidField86,2345
+        BA_Stopper,    BA_DefMidField,  BA_OffMidField,   BA_ShootChance,BA_OffMidField86,2345
+        BA_Stopper,    BA_DefMidField,  BA_OffMidField,   BA_ShootChance,BA_ShootChance86,2345
+        BA_Danger,BA_Danger87,2419
+        BA_NoneBA_None89,2439
+    typedef std::map< std::string, SoccerRole::Creator > RoleFactory;RoleFactory97,2531
+    typedef std::map< std::string, rcsc::Formation::Creator > FormationFactory;FormationFactory98,2601
+    RoleFactory M_role_factory;M_role_factory100,2682
+    FormationFactory M_formation_factory;M_formation_factory101,2714
+    rcsc::Formation::Ptr M_before_kick_off_formation;M_before_kick_off_formation109,2798
+    rcsc::Formation::Ptr M_normal_formation;M_normal_formation111,2853
+    rcsc::Formation::Ptr M_defense_formation;M_defense_formation112,2898
+    rcsc::Formation::Ptr M_offense_formation;M_offense_formation113,2944
+    rcsc::Formation::Ptr M_goal_kick_opp_formation;M_goal_kick_opp_formation115,2991
+    rcsc::Formation::Ptr M_goal_kick_our_formation;M_goal_kick_our_formation116,3043
+    rcsc::Formation::Ptr M_goalie_catch_opp_formation;M_goalie_catch_opp_formation117,3095
+    rcsc::Formation::Ptr M_goalie_catch_our_formation;M_goalie_catch_our_formation118,3150
+    rcsc::Formation::Ptr M_kickin_our_formation;M_kickin_our_formation119,3205
+    rcsc::Formation::Ptr M_setplay_opp_formation;M_setplay_opp_formation120,3254
+    rcsc::Formation::Ptr M_setplay_our_formation;M_setplay_our_formation121,3304
+    rcsc::Formation::Ptr M_indirect_freekick_opp_formation;M_indirect_freekick_opp_formation122,3354
+    rcsc::Formation::Ptr M_indirect_freekick_our_formation;M_indirect_freekick_our_formation123,3414
+    int M_goalie_unum;M_goalie_unum126,3476
+    SituationType M_current_situation;M_current_situation130,3523
+    std::vector< int > M_role_number;M_role_number133,3586
+    std::vector< PositionType > M_position_types;M_position_types136,3655
+    std::vector< rcsc::Vector2D > M_positions;M_positions137,3705
+    Strategy & i()i152,3970
+    int goalieUnum() const { return M_goalie_unum; }goalieUnum179,4394
+    int roleNumber( const int unum ) constroleNumber181,4448
+
+train.sh,21
+usage()usage34,561
+
+view_tactical.cpp,215
+View_Tactical::execute( PlayerAgent * agent )execute49,1234
+View_Tactical::doDefault( PlayerAgent * agent )doDefault98,2565
+View_Tactical::doOurGoalieFreeKick( PlayerAgent * agent )doOurGoalieFreeKick219,6852
+
+view_tactical.h,133
+#define VIEW_TACTICAL_HVIEW_TACTICAL_H28,845
+class View_TacticalView_Tactical32,910
+    ViewAction * clone() constclone41,1030
